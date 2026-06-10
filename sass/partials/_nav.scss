@@ -1,0 +1,68 @@
+@use '../variables/fonts' as f;
+@use '../variables/colors' as c;
+@use '../partials/media_queries' as q;
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: c.$light-blue;
+    padding: 1em 2em;
+    &__home-icon {
+        color: c.$deep-purple;
+        font-size: 1.5em;
+    }
+    &__toggle {
+        display: none;
+        &:checked ~ .navbar__list {
+            @extend .navbar__list--open;
+        }
+    }
+    &__toggle-icon {
+        color: c.$deep-purple;
+        font-size: 2em;
+        &:hover {
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+    &__list {
+        display: none;
+        list-style: none;
+        background-color: c.$light-blue;
+        &--open {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            left: 0;
+            padding: 1em;
+            margin: 0em;
+            gap: 0.25em;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        font-size: 1.25em;
+        color: c.$deep-purple;
+        &:hover {
+            font-weight: bold;
+            cursor: pointer;
+        }   
+    }
+
+    @include q.large-tablet {
+        padding: 1em 4em;
+        &__toggle-icon {
+            display: none;
+        }
+        &__list {
+                display: flex;
+                gap: 1.5em;
+        }
+    }
+}

@@ -9,8 +9,8 @@
     align-items: center;
     padding: 1em;
     height: 70vh;
-    background-color: c.$bg;
-    color: c.$header;
+    background-color: c.$teal;
+    color: c.$pale-blue;
     
     &__heading {
         font-family: f.$header;
@@ -24,7 +24,7 @@
     }
 
     @include q.large-tablet {
-        padding: 6em;
+        padding: 4em;
         align-items: flex-start;
         &__heading {
             &--main {
