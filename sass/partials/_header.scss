@@ -1,0 +1,9 @@
+@use '../variables/fonts' as f;
+
+.header {
+    font-family: f.$header;
+}
+
+.main-text {
+    font-family: f.$main-text;
+}
