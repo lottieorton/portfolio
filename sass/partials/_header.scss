@@ -1,9 +1,38 @@
 @use '../variables/fonts' as f;
+@use '../variables/colors' as c;
+@use '../partials/media_queries' as q;
 
 .header {
-    font-family: f.$header;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    height: 70vh;
+    background-color: c.$bg;
+    color: c.$header;
+    
+    &__heading {
+        font-family: f.$header;
+        &--main {
+            font-size: 2em;
+        }
+        &--small {
+            font-weight: 300;
+            font-size: 1.5em;
+        }
+    }
 
-.main-text {
-    font-family: f.$main-text;
+    @include q.large-tablet {
+        padding: 6em;
+        align-items: flex-start;
+        &__heading {
+            &--main {
+                font-size: 3em;
+            }
+            &--small {
+                font-size: 2.5em;
+            }
+        }
+    }
 }
