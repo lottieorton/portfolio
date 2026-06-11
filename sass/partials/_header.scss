@@ -1,37 +1,35 @@
-@use '../variables/fonts' as f;
 @use '../variables/colors' as c;
-@use '../partials/media_queries' as q;
+@use '../mixins/media_queries' as q;
+@use '../mixins/mixins' as m;
+@use '../variables/sizes' as s;
 
 .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include m.flex(column, center);
     align-items: center;
-    padding: 1em;
     height: 70vh;
     background-color: c.$teal;
     color: c.$pale-blue;
-    
+    gap: 1em;
     &__heading {
-        font-family: f.$header;
+        text-align: center;
+        margin: 0;
         &--main {
-            font-size: 2em;
+            font-size: s.$main-heading;
         }
         &--small {
             font-weight: 300;
-            font-size: 1.5em;
+            font-size: s.$section-heading-small;
         }
     }
 
     @include q.large-tablet {
-        padding: 4em;
         align-items: flex-start;
         &__heading {
             &--main {
-                font-size: 3em;
+                font-size: s.$main-heading--large-tablet;
             }
             &--small {
-                font-size: 2.5em;
+                font-size: s.$section-heading-small--large-tablet;
             }
         }
     }

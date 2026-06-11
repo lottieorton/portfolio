@@ -1,0 +1,16 @@
+@use './variables/fonts' as f;
+
+body {
+    font-family: f.$main-text;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: f.$header;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        font-weight: bold;
+        cursor: pointer;
+    }
+}

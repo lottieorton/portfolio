@@ -1,4 +1,6 @@
 @use './normalize';
 @use './variables/fonts';
+@use './globals';
+@use './partials/page_block';
 @use './partials/header';
 @use './partials/nav';

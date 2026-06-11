@@ -1,0 +1,9 @@
+@use '../mixins/media_queries' as q;
+
+.page-block {
+    padding: 1em 2em;
+    
+    @include q.large-tablet {
+        padding: 1em 4em;
+    }
+}

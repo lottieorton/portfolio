@@ -1,18 +1,17 @@
-@use '../variables/fonts' as f;
 @use '../variables/colors' as c;
-@use '../partials/media_queries' as q;
+@use '../variables/sizes' as s;
+@use '../mixins/media_queries' as q;
+@use '../mixins/mixins' as m;
 
 .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include m.flex(row, space-between);
     align-items: center;
     position: relative;
     background-color: c.$light-blue;
-    padding: 1em 2em;
-    &__home-icon {
+    &__icon {
         color: c.$deep-purple;
-        font-size: 1.5em;
+        cursor: pointer;
+        font-size: 2em;
     }
     &__toggle {
         display: none;
@@ -20,21 +19,12 @@
             @extend .navbar__list--open;
         }
     }
-    &__toggle-icon {
-        color: c.$deep-purple;
-        font-size: 2em;
-        &:hover {
-            font-weight: bold;
-            cursor: pointer;
-        }
-    }
     &__list {
         display: none;
         list-style: none;
         background-color: c.$light-blue;
         &--open {
-            display: flex;
-            flex-direction: column;
+            @include m.flex(column);
             align-items: center;
             position: absolute;
             width: 100%;
@@ -46,22 +36,16 @@
         }
     }
     &__link {
-        text-decoration: none;
-        font-size: 1.25em;
+        font-size: s.$section-text; 
         color: c.$deep-purple;
-        &:hover {
-            font-weight: bold;
-            cursor: pointer;
-        }   
     }
 
     @include q.large-tablet {
-        padding: 1em 4em;
-        &__toggle-icon {
+        &__icon--toggle {
             display: none;
         }
         &__list {
-                display: flex;
+                @include m.flex;
                 gap: 1.5em;
         }
     }
