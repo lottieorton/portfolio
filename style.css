@@ -202,11 +202,16 @@ a:hover {
 }
 
 .page-block {
-  padding: 1em 2em;
+  padding: 4em 2em;
+}
+.page-block--thin {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 @media screen and (min-width: 769px) {
   .page-block {
-    padding: 1em 4em;
+    padding-left: 4em;
+    padding-right: 4em;
   }
 }
 
@@ -236,10 +241,10 @@ a:hover {
     align-items: flex-start;
   }
   .header__heading--main {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   .header__heading--small {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 
@@ -290,6 +295,54 @@ a:hover {
     flex-direction: row;
     justify-content: flex-start;
     gap: 1.5em;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #edf6f9;
+  color: #542344;
+  gap: 1.5em;
+}
+.about__heading {
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+}
+.about__image {
+  object-fit: contain;
+  width: 90%;
+  max-width: 300px;
+  border-radius: 100%;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+}
+.about__text {
+  font-size: 1.1em;
+  text-align: center;
+}
+@media screen and (min-width: 769px) {
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 4em;
+  }
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+  }
+  .about__heading {
+    font-size: 2.5em;
+    text-align: right;
+  }
+  .about__text {
+    font-size: 1.25em;
+    text-align: right;
   }
 }
 
