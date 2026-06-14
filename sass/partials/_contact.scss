@@ -1,0 +1,139 @@
+@use '../variables/colors' as c;
+@use '../mixins/media_queries' as q;
+@use '../mixins/mixins' as m;
+@use '../variables/sizes' as s;
+
+$form-gap: 1em;
+$form-gap--large: 1.5em;
+
+.contact {
+    @include m.flex(column);
+    align-items: center;
+    background-color: c.$teal;
+    color: c.$pale-blue;
+    gap: 2em;
+    &__content {
+        @include m.flex(column);
+        gap: 1em;
+    }
+    &__heading {
+        font-size: s.$section-heading;
+        text-align: center;
+        margin: 0;
+    }
+    &__details {
+        @include m.flex(column);
+        gap: 0.75em;
+    }
+    &__info {
+        @include m.flex(row, center);
+        align-items: center;
+        gap: 0.5em;
+        a {
+            color: c.$pale-blue;
+        }
+    }
+    &__info-icon {
+        font-size: 2em;
+    }
+    &__info-link {
+        margin: 0;
+        font-weight: 300;
+        font-size: 1.25em;
+    }
+    
+    &__form {
+        @include m.flex(column);
+        align-items: center;
+        width: 100%;
+        padding: 2em 1.5em;
+        gap: $form-gap;
+        background-color: c.$pale-blue;
+        color: c.$teal;
+        border-radius: 20px;
+        box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+    }
+    &__form-heading {
+        font-size: 1.5em;
+        margin: 0;
+        text-align: center;
+    }
+    &__form-name {
+        @include m.flex(row, space-between);
+        width: 100%;
+        gap: $form-gap;
+    }
+    &__form-field {
+        width: 100%;
+        font-size: 1.1em;
+        padding: 0.25em;
+        &--textarea {
+            height: 4em;
+        }
+    }
+    &__form-button {
+        background-color: c.$teal;
+        color: c.$pale-blue;
+        padding: 0.5em;
+        border-radius: 5px;
+        font-weight: 700;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    @include q.large-tablet {
+        align-items: flex-start;
+        &__content {
+            gap: 1.5em;
+        }
+        &__heading {
+            font-size: s.$section-heading--large-tablet;
+            text-align: left;
+        }
+        &__details {
+            gap: 1em;
+        }
+        &__info {
+            @include m.flex(row, flex-start);
+        }
+        &__info-icon {
+            font-size: 2.5em;
+        }
+        &__info-link {
+            font-size: 1.5em;
+        }
+
+        &__form {
+            padding: 3em 2.5em;
+            gap: $form-gap--large;
+        }
+        &__form-heading {
+            font-size: 1.75em;
+        }
+        &__form-name {
+            gap: $form-gap--large;
+        }
+        &__form-field {
+            font-size: 1.25em;
+            padding: 0.5em;
+            &--textarea {
+                height: 6em;
+            }
+        }
+        &__form-button {
+            padding: 0.75em;
+            border-radius: 10px;
+        }
+    }
+
+    @include q.laptop {
+        @include m.flex(row, space-between);
+        align-items: center;
+        gap: 6em;
+        &__form {
+            max-width: 800px;
+        }
+    }
+}
+            
