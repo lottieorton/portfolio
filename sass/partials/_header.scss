@@ -1,7 +1,5 @@
-@use '../variables/colors' as c;
 @use '../mixins/media_queries' as q;
 @use '../mixins/mixins' as m;
-@use '../variables/sizes' as s;
 
 .header {
     @include m.flex(column, center);
