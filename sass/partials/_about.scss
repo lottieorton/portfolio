@@ -6,8 +6,6 @@
 .about {
     @include m.flex(column);
     align-items: center;
-    background-color: c.$pale-blue;
-    color: c.$purple;
     gap: 1.5em;
     
     &__heading {

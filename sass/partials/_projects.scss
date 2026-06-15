@@ -6,8 +6,6 @@
 .projects {
     @include m.flex(column);
     align-items: center;
-    background-color: c.$pale-blue;
-    color: c.$purple;
     gap: 1.5em;
     &__heading {
         font-size: s.$section-heading;
@@ -23,8 +21,6 @@
     }
     &__card {
         @include m.flex(column);
-        background-color: c.$purple;
-        color: c.$pale-blue;
         max-width: 400px; 
         padding: 1.5em;
         gap: 1.5em;
