@@ -276,9 +276,6 @@ a:hover {
   .page-block__text {
     font-size: 1.25em;
   }
-  .page-block__text--left {
-    text-align: left;
-  }
   .page-block__text--right {
     text-align: right;
   }

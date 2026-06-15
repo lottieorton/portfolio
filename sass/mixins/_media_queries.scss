@@ -1,9 +1,3 @@
-@mixin tablet {
-    @media screen and (min-width: 577px) {
-        @content;
-    }
-}
-
 @mixin large-tablet {
     @media screen and (min-width: 769px) {
         @content;
