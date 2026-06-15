@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/4f07e26e28.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar page-block page-block--thin">
+        <a href="./index.html" class="navbar__icon">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <input type="checkbox" id="navbar-toggle" class="navbar__toggle" />
+        <label for="navbar-toggle" class="navbar__icon navbar__icon--toggle">
+            <i class="fa-solid fa-angle-down"></i>
+        </label>
+        <ul class="navbar__list">
+            <li>
+                <a href="./index.html#about" class="navbar__link">About</a>
+            </li>
+            <li>
+                <a href="./index.html#tech-stack" class="navbar__link">Tech Stack</a>
+            </li>
+            <li>
+                <a href="./index.html#projects" class="navbar__link">Projects</a>
+            </li>
+            <li>
+                <a href="./contact.html" class="navbar__link">Contact Me</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="contact page-block page-block--full-page">
+            <div class="contact__content">
+                <h2 class="contact__heading">Contact Me</h2>
+                <div class="contact__details">
+                    <div class="contact__info">
+                        <a href="https://github.com/lottieorton"><i class="fa-brands fa-github contact__info-icon"></i></a>
+                        <h3 class="contact__info-link"><a href="https://github.com/lottieorton">github.com/<wbr>lottieorton</a></h3>
+                    </div>
+                    <div class="contact__info">
+                        <a href="https://www.linkedin.com/in/charlotte-orton/"><i class="fa-brands fa-linkedin contact__info-icon"></i></a>
+                        <h3 class="contact__info-link"><a href="https://www.linkedin.com/in/charlotte-orton/">linkedin.com/in/<wbr>charlotte-orton</a></h3>
+                    </div>
+                </div>
+            </div>
+            <form class="contact__form" action="https://formspree.io/f/mojzyqnz" method="POST">
+                <h3 class="contact__form-heading">Send Me a Message</h3>
+                <div class="contact__form-name">
+                    <input type="text" id="firstnameInput" class="contact__form-field" name="firstName" placeholder="First Name" required />
+                    <input type="text" id="lastnameInput" class="contact__form-field" name="lastName" placeholder="Last Name" required />
+                </div>
+                <input type="email" id="emailInput" class="contact__form-field" name="email" placeholder="Email Address" required />
+                <textarea id="messageInput" class="contact__form-field contact__form-field--textarea" name="message" required placeholder="Enter your message here..."></textarea>
+                <button type="submit" class="contact__form-field contact__form-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

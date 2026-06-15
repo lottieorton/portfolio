@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Lottie's Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="https://kit.fontawesome.com/4f07e26e28.js" crossorigin="anonymous"></script>
 </head>
@@ -18,13 +18,16 @@
         </label>
         <ul class="navbar__list">
             <li>
-                <a href="./index.html" class="navbar__link">Tech Skills</a>
+                <a href="#about" class="navbar__link">About</a>
             </li>
             <li>
-                <a href="./index.html" class="navbar__link">Projects</a>
+                <a href="#tech-stack" class="navbar__link">Tech Stack</a>
             </li>
             <li>
-                <a href="./index.html" class="navbar__link">Contact</a>
+                <a href="#projects" class="navbar__link">Projects</a>
+            </li>
+            <li>
+                <a href="./contact.html" class="navbar__link">Contact Me</a>
             </li>
         </ul>
     </nav>
@@ -33,7 +36,7 @@
         <h2 class="header__heading header__heading--small">Junior Software Engineer</h2>
     </header>
     <main>
-        <section class="about page-block">
+        <section id="about" class="about page-block">
             <img src="./assets/Lottie-profile.jpg" class="about__image" alt="Lottie" />
             <div class="about__content">
                 <h2 class="about__heading">About Me</h2>
@@ -41,7 +44,7 @@
                 <p class="about__text">Having spent several years across marketing, fundraising, and media, I consistently gravitated toward the technical side of my roles - including working with SQL, HTML, and CSS. I have since been actively expanding my technical skills through dedicated self-study and am ready to bring my analytical background and unique experience to a forward-thinking engineering team.</p>
             </div>
         </section>
-        <section class="tech-skills page-block">
+        <section id="tech-stack" class="tech-skills page-block">
             <h2 class="tech-skills__heading">My Tech Stack...</h2>
             <div class="tech-skills__grid">
                 <div class="tech-skills__card">
@@ -74,7 +77,7 @@
                 </div>
             </div>
         </section>
-        <section class="projects page-block">
+        <section id="projects" class="projects page-block">
             <h2 class="projects__heading">My Projects...</h2>
             <div class="projects__grid">
                 <div class="projects__card">
@@ -102,31 +105,6 @@
                     <p class="projects__card-text projects__card-text--small">Languages: XXXX</p>
                 </div>
             </div>
-        </section>
-        <section class="contact page-block">
-            <div class="contact__content">
-                <h2 class="contact__heading">Contact Me</h2>
-                <div class="contact__details">
-                    <div class="contact__info">
-                        <a href="https://github.com/lottieorton"><i class="fa-brands fa-github contact__info-icon"></i></a>
-                        <h3 class="contact__info-link"><a href="https://github.com/lottieorton">github.com/<wbr>lottieorton</a></h3>
-                    </div>
-                    <div class="contact__info">
-                        <a href="https://www.linkedin.com/in/charlotte-orton/"><i class="fa-brands fa-linkedin contact__info-icon"></i></a>
-                        <h3 class="contact__info-link"><a href="https://www.linkedin.com/in/charlotte-orton/">linkedin.com/in/<wbr>charlotte-orton</a></h3>
-                    </div>
-                </div>
-            </div>
-            <form class="contact__form" action="https://formspree.io/f/mojzyqnz" method="POST">
-                <h3 class="contact__form-heading">Send Me a Message</h3>
-                <div class="contact__form-name">
-                    <input type="text" id="firstnameInput" class="contact__form-field" name="firstName" placeholder="First Name" required />
-                    <input type="text" id="lastnameInput" class="contact__form-field" name="lastName" placeholder="Last Name" required />
-                </div>
-                <input type="email" id="emailInput" class="contact__form-field" name="email" placeholder="Email Address" required />
-                <textarea id="messageInput" class="contact__form-field contact__form-field--textarea" name="message" required placeholder="Enter your message here..."></textarea>
-                <button type="submit" class="contact__form-field contact__form-button">Send Message</button>
-            </form>
         </section>
     </main>
 </body>

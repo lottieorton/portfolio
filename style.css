@@ -203,15 +203,26 @@ a:hover {
 
 .page-block {
   padding: 4em 2em;
+  min-height: 60vh;
 }
 .page-block--thin {
   padding-top: 1em;
   padding-bottom: 1em;
+  min-height: 8vh;
+}
+.page-block--full-page {
+  min-height: 92vh;
 }
 @media screen and (min-width: 769px) {
   .page-block {
     padding-left: 4em;
     padding-right: 4em;
+  }
+  .page-block--thin {
+    min-height: 10vh;
+  }
+  .page-block--full-page {
+    min-height: 90vh;
   }
 }
 
@@ -349,7 +360,7 @@ a:hover {
 .tech-skills {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background-color: #005c66;
   color: #edf6f9;
@@ -495,13 +506,13 @@ a:hover {
   align-items: center;
   background-color: #005c66;
   color: #edf6f9;
-  gap: 2em;
+  gap: 3em;
 }
 .contact__content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 1em;
+  gap: 2em;
 }
 .contact__heading {
   font-size: 2em;

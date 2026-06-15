@@ -11,10 +11,10 @@ $form-gap--large: 1.5em;
     align-items: center;
     background-color: c.$teal;
     color: c.$pale-blue;
-    gap: 2em;
+    gap: 3em;
     &__content {
         @include m.flex(column);
-        gap: 1em;
+        gap: 2em;
     }
     &__heading {
         font-size: s.$section-heading;

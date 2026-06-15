@@ -4,7 +4,7 @@
 @use '../variables/sizes' as s;
 
 .tech-skills {
-    @include m.flex(column);
+    @include m.flex(column, center);
     align-items: center;
     background-color: c.$teal;
     color: c.$pale-blue;
