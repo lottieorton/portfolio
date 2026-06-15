@@ -20,7 +20,7 @@
         padding: 1.5em;
         gap: 1.5em;
         border-radius: 20px;
-        box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+        @include m.shadow;
     }
     &__card-header {
         font-size: 1.5em;
