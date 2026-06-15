@@ -7,22 +7,12 @@
     @include m.flex(column);
     align-items: center;
     gap: 1.5em;
-    
-    &__heading {
-        font-size: s.$section-heading;
-        text-align: center;
-        margin: 0;
-    }
     &__image {
         object-fit: contain;
         width: 90%;
         max-width: 300px;
         border-radius: 100%;
         box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
-    }
-    &__text {
-        font-size: s.$section-text;
-        text-align: center;
     }
 
     @include q.large-tablet {
@@ -31,14 +21,6 @@
         &__content {
             @include m.flex(column, center);
             max-width: 50%;
-        }
-        &__heading {
-            font-size: s.$section-heading--large-tablet;
-            text-align: right;
-        }
-        &__text {
-            font-size: s.$section-text--large-tablet;
-            text-align: right;
         }
     }
 }

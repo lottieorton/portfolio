@@ -7,11 +7,6 @@
     @include m.flex(column);
     align-items: center;
     gap: 1.5em;
-    &__heading {
-        font-size: s.$section-heading;
-        text-align: center;
-        margin: 0;
-    }
     &__grid {
         display: grid;
         justify-items: center;
@@ -40,7 +35,7 @@
     &__card-text {
         margin: 0;
         text-align: center;
-        font-size: s.$section-text;
+        font-size: 1.1em;
         &--small {
             font-size: 1em;
         }
@@ -48,11 +43,6 @@
 
     @include q.large-tablet {
         gap: 4em;
-        &__heading {
-            font-size: s.$section-heading--large-tablet;
-            align-self: flex-end;
-            text-align: right;
-        }
         &__grid {
             grid-template: 1fr 1fr / 1fr 1fr;
             gap: 2em;
@@ -68,7 +58,7 @@
             max-width: 435px;
         }
         &__card-text {
-            font-size: s.$section-text--large-tablet;
+            font-size: 1.25em;
             &--small {
                 font-size: 1.1em;
             }

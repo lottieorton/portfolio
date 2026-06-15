@@ -14,11 +14,6 @@ $form-gap--large: 1.5em;
         @include m.flex(column);
         gap: 2em;
     }
-    &__heading {
-        font-size: s.$section-heading;
-        text-align: center;
-        margin: 0;
-    }
     &__details {
         @include m.flex(column);
         gap: 0.75em;
@@ -77,10 +72,6 @@ $form-gap--large: 1.5em;
         align-items: flex-start;
         &__content {
             gap: 1.5em;
-        }
-        &__heading {
-            font-size: s.$section-heading--large-tablet;
-            text-align: left;
         }
         &__details {
             gap: 1em;

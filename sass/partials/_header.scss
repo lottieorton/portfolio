@@ -8,27 +8,8 @@
     align-items: center;
     height: 70vh;
     gap: 1em;
-    &__heading {
-        text-align: center;
-        margin: 0;
-        &--main {
-            font-size: s.$section-heading;
-        }
-        &--small {
-            font-weight: 300;
-            font-size: s.$section-heading-small;
-        }
-    }
 
     @include q.large-tablet {
         align-items: flex-start;
-        &__heading {
-            &--main {
-                font-size: s.$section-heading--large-tablet;
-            }
-            &--small {
-                font-size: s.$section-heading-small--large-tablet;
-            }
-        }
     }
 }

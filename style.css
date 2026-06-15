@@ -236,6 +236,19 @@ a:hover {
   background-color: #005c66;
   color: #edf6f9;
 }
+.page-block__heading {
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+}
+.page-block__heading--small {
+  font-weight: 300;
+  font-size: 1.5em;
+}
+.page-block__text {
+  font-size: 1.1em;
+  text-align: center;
+}
 @media screen and (min-width: 769px) {
   .page-block {
     padding-left: 4em;
@@ -247,6 +260,28 @@ a:hover {
   .page-block--full-page {
     min-height: 90vh;
   }
+  .page-block__heading {
+    font-size: 2.5em;
+  }
+  .page-block__heading--small {
+    font-size: 2em;
+  }
+  .page-block__heading--left {
+    text-align: left;
+  }
+  .page-block__heading--right {
+    text-align: right;
+    align-self: flex-end;
+  }
+  .page-block__text {
+    font-size: 1.25em;
+  }
+  .page-block__text--left {
+    text-align: left;
+  }
+  .page-block__text--right {
+    text-align: right;
+  }
 }
 
 .header {
@@ -257,26 +292,9 @@ a:hover {
   height: 70vh;
   gap: 1em;
 }
-.header__heading {
-  text-align: center;
-  margin: 0;
-}
-.header__heading--main {
-  font-size: 2em;
-}
-.header__heading--small {
-  font-weight: 300;
-  font-size: 1.5em;
-}
 @media screen and (min-width: 769px) {
   .header {
     align-items: flex-start;
-  }
-  .header__heading--main {
-    font-size: 2.5em;
-  }
-  .header__heading--small {
-    font-size: 2em;
   }
 }
 
@@ -337,21 +355,12 @@ a:hover {
   align-items: center;
   gap: 1.5em;
 }
-.about__heading {
-  font-size: 2em;
-  text-align: center;
-  margin: 0;
-}
 .about__image {
   object-fit: contain;
   width: 90%;
   max-width: 300px;
   border-radius: 100%;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
-}
-.about__text {
-  font-size: 1.1em;
-  text-align: center;
 }
 @media screen and (min-width: 769px) {
   .about {
@@ -366,14 +375,6 @@ a:hover {
     justify-content: center;
     max-width: 50%;
   }
-  .about__heading {
-    font-size: 2.5em;
-    text-align: right;
-  }
-  .about__text {
-    font-size: 1.25em;
-    text-align: right;
-  }
 }
 
 .tech-skills {
@@ -382,11 +383,6 @@ a:hover {
   justify-content: center;
   align-items: center;
   gap: 2em;
-}
-.tech-skills__heading {
-  font-size: 2em;
-  text-align: center;
-  margin: 0;
 }
 .tech-skills__grid {
   display: flex;
@@ -404,9 +400,6 @@ a:hover {
 .tech-skills__card-icon {
   font-size: 2em;
 }
-.tech-skills__card-label {
-  font-size: 1.1em;
-}
 @media screen and (min-width: 769px) {
   .tech-skills {
     display: flex;
@@ -414,8 +407,6 @@ a:hover {
     justify-content: space-evenly;
   }
   .tech-skills__heading {
-    font-size: 2.5em;
-    text-align: left;
     width: 60%;
   }
   .tech-skills__grid {
@@ -423,9 +414,6 @@ a:hover {
   }
   .tech-skills__card-icon {
     font-size: 2.5em;
-  }
-  .tech-skills__card-label {
-    font-size: 1.25em;
   }
 }
 
@@ -435,11 +423,6 @@ a:hover {
   justify-content: flex-start;
   align-items: center;
   gap: 1.5em;
-}
-.projects__heading {
-  font-size: 2em;
-  text-align: center;
-  margin: 0;
 }
 .projects__grid {
   display: grid;
@@ -480,11 +463,6 @@ a:hover {
   .projects {
     gap: 4em;
   }
-  .projects__heading {
-    font-size: 2.5em;
-    align-self: flex-end;
-    text-align: right;
-  }
   .projects__grid {
     grid-template: 1fr 1fr/1fr 1fr;
     gap: 2em;
@@ -524,11 +502,6 @@ a:hover {
   flex-direction: column;
   justify-content: flex-start;
   gap: 2em;
-}
-.contact__heading {
-  font-size: 2em;
-  text-align: center;
-  margin: 0;
 }
 .contact__details {
   display: flex;
@@ -596,10 +569,6 @@ a:hover {
   }
   .contact__content {
     gap: 1.5em;
-  }
-  .contact__heading {
-    font-size: 2.5em;
-    text-align: left;
   }
   .contact__details {
     gap: 1em;

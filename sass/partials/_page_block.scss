@@ -1,5 +1,6 @@
 @use '../mixins/media_queries' as q;
 @use '../variables/colors' as c;
+@use '../variables/sizes' as s;
 
 .page-block {
     padding: 4em 2em;
@@ -36,7 +37,21 @@
                 color: c.$pale-blue;
             }
         }
-    } 
+    }
+    &__heading {
+        font-size: s.$section-heading;
+        text-align: center;
+        margin: 0;
+        &--small {
+            font-weight: 300;
+            font-size: s.$section-heading-small;
+        }
+    }
+    &__text {
+        font-size: s.$section-text;
+        text-align: center;
+    }
+
     @include q.large-tablet {
         padding-left: 4em;
         padding-right: 4em;
@@ -45,6 +60,28 @@
         }
         &--full-page {
             min-height: 90vh;
+        }
+        &__heading {
+            font-size: s.$section-heading--large-tablet;
+            &--small {
+                font-size: s.$section-heading-small--large-tablet;
+            }
+            &--left {
+                text-align: left;
+            }
+            &--right {
+                text-align: right;
+                align-self: flex-end;
+            }
+        }
+        &__text {
+            font-size: s.$section-text--large-tablet;
+            &--left {
+                text-align: left;
+            }
+            &--right {
+                text-align: right;
+            }
         }
     }
 }
