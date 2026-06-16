@@ -598,6 +598,9 @@ a:hover {
   text-align: center;
   margin: 0;
 }
+.card__header a:hover {
+  text-decoration: underline;
+}
 .card__image {
   object-fit: contain;
   width: 100%;
