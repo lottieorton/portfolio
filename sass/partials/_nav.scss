@@ -1,5 +1,4 @@
 @use '../variables/colors' as c;
-@use '../variables/sizes' as s;
 @use '../mixins/media_queries' as q;
 @use '../mixins/mixins' as m;
 
@@ -36,7 +35,7 @@
         }
     }
     &__link {
-        font-size: s.$section-text; 
+        font-size: 1.1em; 
         color: c.$deep-purple;
     }
 

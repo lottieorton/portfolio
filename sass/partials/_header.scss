@@ -1,36 +1,13 @@
-@use '../variables/colors' as c;
 @use '../mixins/media_queries' as q;
 @use '../mixins/mixins' as m;
-@use '../variables/sizes' as s;
 
 .header {
     @include m.flex(column, center);
     align-items: center;
     height: 70vh;
-    background-color: c.$teal;
-    color: c.$pale-blue;
     gap: 1em;
-    &__heading {
-        text-align: center;
-        margin: 0;
-        &--main {
-            font-size: s.$section-heading;
-        }
-        &--small {
-            font-weight: 300;
-            font-size: s.$section-heading-small;
-        }
-    }
 
     @include q.large-tablet {
         align-items: flex-start;
-        &__heading {
-            &--main {
-                font-size: s.$section-heading--large-tablet;
-            }
-            &--small {
-                font-size: s.$section-heading-small--large-tablet;
-            }
-        }
     }
 }

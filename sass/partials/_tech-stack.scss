@@ -1,19 +1,10 @@
-@use '../variables/colors' as c;
 @use '../mixins/media_queries' as q;
 @use '../mixins/mixins' as m;
-@use '../variables/sizes' as s;
 
-.tech-skills {
+.tech-stack {
     @include m.flex(column, center);
     align-items: center;
-    background-color: c.$teal;
-    color: c.$pale-blue;
     gap: 2em;
-    &__heading {
-        font-size: s.$section-heading;
-        text-align: center;
-        margin: 0;
-    }
     &__grid {
         @include m.flex(row, center);
         flex-wrap: wrap;
@@ -26,15 +17,10 @@
     &__card-icon {
         font-size: 2em;
     }
-    &__card-label {
-        font-size: s.$section-text;
-    }
 
     @include q.large-tablet {
         @include m.flex(row, space-evenly);
         &__heading {
-            font-size: s.$section-heading--large-tablet;
-            text-align: left;
             width: 60%;
         }
         &__grid {
@@ -42,9 +28,6 @@
         }
         &__card-icon {
             font-size: 2.5em;
-        }
-        &__card-label {
-            font-size: s.$section-text--large-tablet;
         }
     }
 }

@@ -1,8 +1,20 @@
 @use '../mixins/media_queries' as q;
+@use '../variables/colors' as c;
 
 .page-block {
     padding: 4em 2em;
     min-height: 60vh;
+    &--blue {
+        background-color: c.$teal;
+        color: c.$pale-blue;
+        a {
+            color: c.$pale-blue;
+        }
+    }
+    &--pale-blue {
+        background-color: c.$pale-blue;
+        color: c.$purple;
+    }
     &--thin {
         padding-top: 1em;
         padding-bottom: 1em;
@@ -11,6 +23,34 @@
     &--full-page {
         min-height: 92vh;
     }
+    &__sub-section {
+        &--purple {
+            background-color: c.$purple;
+            color: c.$pale-blue;
+        }
+        &--pale-blue {
+            background-color: c.$pale-blue;
+            color: c.$teal;
+            &__button {
+                background-color: c.$teal;
+                color: c.$pale-blue;
+            }
+        }
+    }
+    &__heading {
+        font-size: 2em;
+        text-align: center;
+        margin: 0;
+        &--small {
+            font-weight: 300;
+            font-size: 1.5em;
+        }
+    }
+    &__text {
+        font-size: 1.1em;
+        text-align: center;
+    }
+
     @include q.large-tablet {
         padding-left: 4em;
         padding-right: 4em;
@@ -19,6 +59,25 @@
         }
         &--full-page {
             min-height: 90vh;
+        }
+        &__heading {
+            font-size: 2.5em;
+            &--small {
+                font-size: 2em;
+            }
+            &--left {
+                text-align: left;
+            }
+            &--right {
+                text-align: right;
+                align-self: flex-end;
+            }
+        }
+        &__text {
+            font-size: 1.25em;
+            &--right {
+                text-align: right;
+            }
         }
     }
 }

@@ -1,19 +1,10 @@
-@use '../variables/colors' as c;
 @use '../mixins/media_queries' as q;
 @use '../mixins/mixins' as m;
-@use '../variables/sizes' as s;
 
 .projects {
     @include m.flex(column);
     align-items: center;
-    background-color: c.$pale-blue;
-    color: c.$purple;
     gap: 1.5em;
-    &__heading {
-        font-size: s.$section-heading;
-        text-align: center;
-        margin: 0;
-    }
     &__grid {
         display: grid;
         justify-items: center;
@@ -23,13 +14,11 @@
     }
     &__card {
         @include m.flex(column);
-        background-color: c.$purple;
-        color: c.$pale-blue;
         max-width: 400px; 
         padding: 1.5em;
         gap: 1.5em;
         border-radius: 20px;
-        box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+        @include m.shadow;
     }
     &__card-header {
         font-size: 1.5em;
@@ -44,7 +33,7 @@
     &__card-text {
         margin: 0;
         text-align: center;
-        font-size: s.$section-text;
+        font-size: 1.1em;
         &--small {
             font-size: 1em;
         }
@@ -52,11 +41,6 @@
 
     @include q.large-tablet {
         gap: 4em;
-        &__heading {
-            font-size: s.$section-heading--large-tablet;
-            align-self: flex-end;
-            text-align: right;
-        }
         &__grid {
             grid-template: 1fr 1fr / 1fr 1fr;
             gap: 2em;
@@ -72,7 +56,7 @@
             max-width: 435px;
         }
         &__card-text {
-            font-size: s.$section-text--large-tablet;
+            font-size: 1.25em;
             &--small {
                 font-size: 1.1em;
             }
