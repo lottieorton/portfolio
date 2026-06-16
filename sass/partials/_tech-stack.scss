@@ -14,7 +14,7 @@
         @include m.flex(column, center);
         align-items: center;
     }
-    &__card-icon {
+    &__icon {
         font-size: 2em;
     }
 
@@ -26,7 +26,7 @@
         &__grid {
             gap: 3em;
         }
-        &__card-icon {
+        &__icon {
             font-size: 2.5em;
         }
     }
