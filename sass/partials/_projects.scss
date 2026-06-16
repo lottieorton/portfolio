@@ -12,54 +12,12 @@
         grid-template: 1fr 1fr 1fr / 1fr;
         gap: 2em;
     }
-    &__card {
-        @include m.flex(column);
-        max-width: 400px; 
-        padding: 1.5em;
-        gap: 1.5em;
-        border-radius: 20px;
-        @include m.shadow;
-    }
-    &__card-header {
-        font-size: 1.5em;
-        text-align: center;
-        margin: 0;
-    }
-    &__card-image {
-        object-fit: contain;
-        width: 100%;
-        border-radius: 20px;
-    }
-    &__card-text {
-        margin: 0;
-        text-align: center;
-        font-size: 1.1em;
-        &--small {
-            font-size: 1em;
-        }
-    }
 
     @include q.large-tablet {
         gap: 4em;
         &__grid {
             grid-template: 1fr 1fr / 1fr 1fr;
             gap: 2em;
-        }
-        &__card {
-            padding: 1.75em;
-            gap: 1.75em;
-        }
-        &__card-header {
-            font-size: 1.75em;
-        }
-        &__card-image { 
-            max-width: 435px;
-        }
-        &__card-text {
-            font-size: 1.25em;
-            &--small {
-                font-size: 1.1em;
-            }
         }
     }
     @include q.desktop {

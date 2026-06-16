@@ -1,0 +1,11 @@
+@use '../variables/colors' as c;
+
+.typewriter {
+    border-right: .15em solid c.$pale-blue;
+    animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: c.$pale-blue ;}
+}

@@ -1,0 +1,68 @@
+@use '../mixins/media_queries' as q;
+@use '../mixins/mixins' as m;
+
+$form-gap: 1em;
+$form-gap--large: 1.5em;
+
+.form {
+    @include m.flex(column);
+    align-items: center;
+    width: 100%;
+    padding: 2em 1.5em;
+    gap: $form-gap;
+    border-radius: 20px;
+    @include m.shadow;
+    &__heading {
+        font-size: 1.5em;
+        margin: 0;
+        text-align: center;
+    }
+    &__name {
+        @include m.flex(row, space-between);
+        width: 100%;
+        gap: $form-gap;
+    }
+    &__field {
+        width: 100%;
+        font-size: 1.1em;
+        padding: 0.25em;
+        &--textarea {
+            height: 4em;
+        }
+    }
+    &__button {
+        padding: 0.5em;
+        border-radius: 5px;
+        font-weight: 700;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    @include q.large-tablet {
+        padding: 3em 2.5em;
+        gap: $form-gap--large;
+        &__heading {
+            font-size: 1.75em;
+        }
+        &__name {
+            gap: $form-gap--large;
+        }
+        &__field {
+            font-size: 1.25em;
+            padding: 0.5em;
+            &--textarea {
+                height: 6em;
+            }
+        }
+        &__button {
+            padding: 0.75em;
+            border-radius: 10px;
+        }
+    }
+
+    @include q.laptop {
+        max-width: 800px;
+    }
+}
+            
