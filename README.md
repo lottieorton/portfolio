@@ -2,18 +2,18 @@
 
 ## Description
 
-This portfolio project contains a detailed account of me and my journey to date in becoming a software engineer.
+This portfolio website contains information about me and my journey to date in becoming a software engineer.
 
 ## This website contains the following sections:
 
-* A landing page with an **About** section
-* Tech stacks/skills page
-* Projects page
-* Contact page
+* **Home** page with the following sections:
+    * **About Me**
+    * **Tech Stack**
+    * **Projects** 
+* **Contact page** with form
 
 ## Technologies
 
 The technologies used to build this page include:
 * HTML
 * SCSS
-* CSS
