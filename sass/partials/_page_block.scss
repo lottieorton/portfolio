@@ -27,6 +27,12 @@
         &--purple {
             background-color: c.$purple;
             color: c.$pale-blue;
+            a {
+                color: c.$pale-blue;
+                &:visited {
+                    color: c.$pale-blue;
+                }
+            }  
         }
         &--pale-blue {
             background-color: c.$pale-blue;

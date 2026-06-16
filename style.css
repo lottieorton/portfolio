@@ -228,6 +228,12 @@ a:hover {
   background-color: #542344;
   color: #edf6f9;
 }
+.page-block__sub-section--purple a {
+  color: #edf6f9;
+}
+.page-block__sub-section--purple a:visited {
+  color: #edf6f9;
+}
 .page-block__sub-section--pale-blue {
   background-color: #edf6f9;
   color: #005c66;
