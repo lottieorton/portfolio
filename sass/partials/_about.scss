@@ -21,4 +21,10 @@
             max-width: 50%;
         }
     }
+
+    @include q.large-desktop {
+        &__image {
+            max-width: 400px;
+        }
+    }
 }

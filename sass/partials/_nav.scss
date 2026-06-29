@@ -8,7 +8,7 @@
     position: relative;
     background-color: c.$light-blue;
     &__icon {
-        color: c.$deep-purple;
+        color: c.$purple;
         cursor: pointer;
         font-size: 2em;
     }
@@ -36,7 +36,7 @@
     }
     &__link {
         font-size: 1.1em; 
-        color: c.$deep-purple;
+        color: c.$purple;
     }
 
     @include q.large-tablet {
@@ -44,8 +44,17 @@
             display: none;
         }
         &__list {
-                @include m.flex;
-                gap: 1.5em;
+            @include m.flex;
+            gap: 1.5em;
+        }
+    }
+
+    @include q.large-desktop {
+        &__icon {
+            font-size: 3em;
+        }
+        &__link {
+            font-size: 2em;
         }
     }
 }
