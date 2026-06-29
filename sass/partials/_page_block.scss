@@ -86,4 +86,18 @@
             }
         }
     }
+
+    @include q.large-desktop {
+        padding-left: 6em;
+        padding-right: 6em;
+        &__heading {
+            font-size: 4em;
+            &--small {
+                font-size: 3em;
+            }
+        }
+        &__text {
+            font-size: 2em;
+        }
+    }
 }

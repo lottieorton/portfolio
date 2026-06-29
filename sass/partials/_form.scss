@@ -3,6 +3,7 @@
 
 $form-gap: 1em;
 $form-gap--large: 1.5em;
+$form-gap--xlarge: 2em;
 
 .form {
     @include m.flex(column);
@@ -63,6 +64,29 @@ $form-gap--large: 1.5em;
 
     @include q.laptop {
         max-width: 800px;
+    }
+
+    @include q.large-desktop {
+        padding: 4.5em 4em;
+        gap: $form-gap--xlarge;
+        max-width: 1000px;
+        &__heading {
+            font-size: 3em;
+        }
+        &__name {
+            gap: $form-gap--xlarge;
+        }
+        &__field {
+            font-size: 2em;
+            padding: 0.75em;
+            &--textarea {
+                height: 10em;
+            }
+        }
+        &__button {
+            padding: 1em;
+            border-radius: 20px;
+        }
     }
 }
             
