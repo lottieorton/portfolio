@@ -1,11 +1,19 @@
-@use '../variables/colors' as c;
+@use "../variables/colors" as c;
+@use "../mixins/media_queries" as q;
 
 .typewriter {
-    border-right: .15em solid c.$pale-blue;
-    animation: blink-caret .75s step-end infinite;
+  @include q.large-tablet {
+    border-right: 0.15em solid c.$pale-blue;
+    animation: blink-caret 0.75s step-end infinite;
+  }
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: c.$pale-blue ;}
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: c.$pale-blue;
+  }
 }

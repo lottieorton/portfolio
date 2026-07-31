@@ -1,119 +1,309 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lottie's Portfolio</title>
-        <link rel="stylesheet" href="./style.css" />
-        <script src="https://kit.fontawesome.com/4f07e26e28.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <nav class="navbar page-block page-block--thin">
-            <a href="./index.html" class="navbar__icon">
-                <i class="fa-solid fa-house"></i>
-            </a>
-            <input type="checkbox" id="navbar-toggle" class="navbar__toggle" />
-            <label for="navbar-toggle" class="navbar__icon navbar__icon--toggle">
-                <i class="fa-solid fa-angle-down"></i>
-            </label>
-            <ul class="navbar__list">
-                <li>
-                    <a href="#about" class="navbar__link">About</a>
-                </li>
-                <li>
-                    <a href="#tech-stack" class="navbar__link">Tech Stack</a>
-                </li>
-                <li>
-                    <a href="#projects" class="navbar__link">Projects</a>
-                </li>
-                <li>
-                    <a href="./contact.html" class="navbar__link">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
-        <header class="header page-block page-block--blue">
-            <h1 class="page-block__heading page-block__heading--left typewriter">Hi, I'm Lottie Orton</h1>
-            <h2 class="page-block__heading page-block__heading--small page-block__heading--left">Junior Software Engineer</h2>
-        </header>
-        <main>
-            <section id="about" class="about page-block page-block--pale-blue">
-                <img src="./assets/Lottie-profile.jpg" class="about__image" alt="Lottie" />
-                <div class="about__content">
-                    <h2 class="page-block__heading page-block__heading--right">About Me</h2>
-                    <p class="page-block__text page-block__text--right">I am a transitioning professional turning a strong foundation in data analysis and problem-solving into a career in Software Engineering.</p>
-                    <p class="page-block__text page-block__text--right">Having spent several years across marketing, fundraising, and media, I consistently gravitated toward the technical side of my roles - including working with SQL, HTML, and CSS. I have since been actively expanding my technical skills through dedicated self-study and am ready to bring my analytical background and unique experience to a forward-thinking engineering team.</p>
-                </div>
-            </section>
-            <section id="tech-stack" class="tech-stack page-block page-block--blue">
-                <h2 class="tech-stack__heading page-block__heading page-block__heading--left">My Tech Stack...</h2>
-                <div class="tech-stack__grid">
-                    <div class="tech-stack__card">
-                        <i class="fa-brands fa-js tech-stack__icon"></i>
-                        <p class="page-block__text">JavaScript</p>
-                    </div>
-                    <div class="tech-stack__card">
-                        <i class="fa-brands fa-html5 tech-stack__icon"></i>
-                        <p class="page-block__text">HTML</p>
-                    </div>
-                    <div class="tech-stack__card">
-                        <i class="fa-brands fa-css3-alt tech-stack__icon"></i>
-                        <p class="page-block__text">CSS</p>
-                    </div>
-                    <div class="tech-stack__card">
-                        <i class="fa-brands fa-sass tech-stack__icon"></i>
-                        <p class="page-block__text">Sass</p>
-                    </div>
-                    <div class="tech-stack__card">
-                        <i class="fa-solid fa-database tech-stack__icon"></i>
-                        <p class="page-block__text">SQL</p>
-                    </div>
-                    <div class="tech-stack__card">
-                        <i class="fa-brands fa-postgresql tech-stack__icon"></i>
-                        <p class="page-block__text">PostgreSQL</p>
-                    </div>
-                    <div class="tech-stack__card">
-                        <i class="fa-brands fa-github tech-stack__icon"></i>
-                        <p class="page-block__text">GitHub</p>
-                    </div>
-                </div>
-            </section>
-            <section id="projects" class="projects page-block page-block--pale-blue">
-                <h2 class="page-block__heading page-block__heading--right">My Projects...</h2>
-                <div class="projects__grid">
-                    <div class="card page-block__sub-section--purple">
-                        <h3 class="card__header"><a href="https://github.com/lottieorton/minefield-project">Minefield</a></h3>
-                        <a href="https://github.com/lottieorton/minefield-project">
-                            <img src="./assets/minefield.jpg" class="card__image" alt="Minefield website" />
-                        </a>
-                        <p class="card__text">Clear all mines in the field, at your selected difficulty level. Create a profile and see your success rates.</p>
-                        <p class="card__text card__text--small">Languages: JavaScript, HTML, CSS</p>
-                    </div>
-                    <div class="card page-block__sub-section--purple">
-                        <h3 class="card__header"><a href="https://github.com/lottieorton/reddit-project">Reddit</a></h3>
-                        <a href="https://github.com/lottieorton/reddit-project">
-                            <img src="./assets/reddit.png" class="card__image" alt="Reddit website" />
-                        </a>
-                        <p class="card__text">A Reddit application</p>
-                        <p class="card__text card__text--small">Languages: JavaScript, HTML, CSS</p>
-                    </div>
-                    <div class="card page-block__sub-section--purple">
-                        <h3 class="card__header"><a href="https://github.com/lottieorton/fight-simulator">Fight Simulator</a></h3>
-                        <a href="https://github.com/lottieorton/fight-simulator">
-                            <img src="./assets/fight-sim.jpg" class="card__image" alt="Fight Simulator game" />
-                        </a>
-                        <p class="card__text">A terminal based fight simulator game</p>
-                        <p class="card__text card__text--small">Languages: JavaScript</p>
-                    </div>
-                    <div class="card page-block__sub-section--purple">
-                        <h3 class="card__header"><a href="https://github.com/lottieorton/assessment-cafe">Cafe website</a></h3>
-                        <a href="https://github.com/lottieorton/assessment-cafe">
-                            <img src="./assets/cafe.png" class="card__image" alt="Cafe website" />
-                        </a>
-                        <p class="card__text">A responsive cafe website</p>
-                        <p class="card__text card__text--small">Languages: HTML, SCSS</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lottie's Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/4f07e26e28.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js" type="module" defer></script>
+  </head>
+  <body>
+    <nav class="navbar page-block page-block--thin">
+      <a href="./index.html" class="navbar__icon">
+        <i class="fa-solid fa-house"></i>
+      </a>
+      <input type="checkbox" id="navbar-toggle" class="navbar__toggle" />
+      <label for="navbar-toggle" class="navbar__icon navbar__icon--toggle">
+        <i class="fa-solid fa-angle-down"></i>
+      </label>
+      <ul class="navbar__list">
+        <li>
+          <a href="#about" class="navbar__link">About</a>
+        </li>
+        <li>
+          <a href="#tech-stack" class="navbar__link">Tech Stack</a>
+        </li>
+        <li>
+          <a href="#projects" class="navbar__link">Projects</a>
+        </li>
+        <li>
+          <a href="./contact.html" class="navbar__link">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header page-block page-block--blue">
+      <h1 class="page-block__heading page-block__heading--left typewriter"></h1>
+      <h2
+        id="sub-heading"
+        class="page-block__heading page-block__heading--small page-block__heading--left"
+      ></h2>
+    </header>
+    <main>
+      <section id="about" class="about page-block page-block--pale-blue">
+        <img
+          src="./assets/Lottie-profile.jpg"
+          class="about__image"
+          alt="Lottie"
+        />
+        <div class="about__content">
+          <h2 class="page-block__heading page-block__heading--right">
+            About Me
+          </h2>
+          <p class="page-block__text page-block__text--right">
+            I am a transitioning professional turning a strong foundation in
+            data analysis and problem-solving into a career in Software
+            Engineering.
+          </p>
+          <p class="page-block__text page-block__text--right">
+            Having spent several years across marketing, fundraising, and media,
+            I consistently gravitated toward the technical side of my roles -
+            including working with SQL, HTML, and CSS. I have since been
+            actively expanding my technical skills through dedicated self-study
+            and am ready to bring my analytical background and unique experience
+            to a forward-thinking engineering team.
+          </p>
+        </div>
+      </section>
+      <section id="tech-stack" class="tech-stack page-block page-block--blue">
+        <h2
+          class="tech-stack__heading page-block__heading page-block__heading--left"
+        >
+          My Tech Stack...
+        </h2>
+        <div class="tech-stack__grid">
+          <div class="tech-stack__card">
+            <i class="fa-brands fa-js tech-stack__icon"></i>
+            <p class="page-block__text">JavaScript</p>
+          </div>
+          <div class="tech-stack__card">
+            <i class="fa-brands fa-typescript tech-stack__icon"></i>
+            <p class="page-block__text">TypeScript</p>
+          </div>
+          <div class="tech-stack__card">
+            <i class="fa-brands fa-react tech-stack__icon"></i>
+            <p class="page-block__text">React</p>
+          </div>
+          <div class="tech-stack__card">
+            <i class="fa-brands fa-java tech-stack__icon"></i>
+            <p class="page-block__text">Java</p>
+          </div>
+          <div class="tech-stack__card">
+            <i class="fa-brands fa-html5 tech-stack__icon"></i>
+            <p class="page-block__text">HTML</p>
+          </div>
+          <div class="tech-stack__card">
+            <i class="fa-brands fa-css3-alt tech-stack__icon"></i>
+            <p class="page-block__text">CSS</p>
+          </div>
+          <div class="tech-stack__card">
+            <i class="fa-brands fa-sass tech-stack__icon"></i>
+            <p class="page-block__text">Sass</p>
+          </div>
+          <div class="tech-stack__card">
+            <i class="fa-solid fa-database tech-stack__icon"></i>
+            <p class="page-block__text">SQL</p>
+          </div>
+          <div class="tech-stack__card">
+            <i class="fa-brands fa-postgresql tech-stack__icon"></i>
+            <p class="page-block__text">PostgreSQL</p>
+          </div>
+          <div class="tech-stack__card">
+            <i class="fa-brands fa-github tech-stack__icon"></i>
+            <p class="page-block__text">GitHub</p>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="projects page-block page-block--pale-blue">
+        <h2 class="page-block__heading page-block__heading--right">
+          My Projects...
+        </h2>
+        <div class="carousel">
+          <button
+            class="carousel__btn carousel__btn--prev"
+            id="prevBtn"
+            aria-label="Previous"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="carousel__container">
+            <div class="carousel__track" id="carousel-track">
+              <div
+                class="card page-block__sub-section--purple carousel__card active"
+              >
+                <h3 class="card__header">
+                  <a href="https://github.com/lottieorton/minefield-project"
+                    >Minefield</a
+                  >
+                </h3>
+                <a href="https://github.com/lottieorton/minefield-project">
+                  <img
+                    src="./assets/minefield.jpg"
+                    class="card__image"
+                    alt="Minefield website"
+                  />
+                </a>
+                <p class="card__text">
+                  Clear all mines in the field, at your selected difficulty
+                  level. Create a profile and see your success rates.
+                </p>
+                <p class="card__text card__text--small">
+                  Languages: JavaScript, HTML, CSS
+                </p>
+              </div>
+              <div class="card page-block__sub-section--purple carousel__card">
+                <h3 class="card__header">
+                  <a href="https://github.com/lottieorton/reddit-project"
+                    >Reddit</a
+                  >
+                </h3>
+                <a href="https://github.com/lottieorton/reddit-project">
+                  <img
+                    src="./assets/reddit.png"
+                    class="card__image"
+                    alt="Reddit website"
+                  />
+                </a>
+                <p class="card__text">A Reddit application</p>
+                <p class="card__text card__text--small">
+                  Languages: JavaScript, HTML, CSS
+                </p>
+              </div>
+              <div class="card page-block__sub-section--purple carousel__card">
+                <h3 class="card__header">
+                  <a href="https://github.com/lottieorton/fight-simulator"
+                    >Fight Simulator</a
+                  >
+                </h3>
+                <a href="https://github.com/lottieorton/fight-simulator">
+                  <img
+                    src="./assets/fight-sim.jpg"
+                    class="card__image"
+                    alt="Fight Simulator game"
+                  />
+                </a>
+                <p class="card__text">A terminal based fight simulator game</p>
+                <p class="card__text card__text--small">
+                  Languages: JavaScript
+                </p>
+              </div>
+              <div class="card page-block__sub-section--purple carousel__card">
+                <h3 class="card__header">
+                  <a href="https://github.com/lottieorton/assessment-cafe"
+                    >Cafe website</a
+                  >
+                </h3>
+                <a href="https://github.com/lottieorton/assessment-cafe">
+                  <img
+                    src="./assets/cafe.png"
+                    class="card__image"
+                    alt="Cafe website"
+                  />
+                </a>
+                <p class="card__text">A responsive cafe website</p>
+                <p class="card__text card__text--small">
+                  Languages: HTML, SCSS
+                </p>
+              </div>
+
+              <div class="card page-block__sub-section--purple carousel__card">
+                <h3 class="card__header">
+                  <a href="https://github.com/lottieorton/hangman">Hangman</a>
+                </h3>
+                <a href="https://github.com/lottieorton/hangman">
+                  <img
+                    src="./assets/hangman.png"
+                    class="card__image"
+                    alt="Hangman game"
+                  />
+                </a>
+                <p class="card__text">
+                  A 'walk the plank' version of the classic Hangman game, by
+                  spelling out the concealed word before the character dives
+                  into the water.
+                </p>
+                <p class="card__text card__text--small">
+                  Languages: JavaScript, HTML, SCSS
+                </p>
+              </div>
+
+              <div class="card page-block__sub-section--purple carousel__card">
+                <h3 class="card__header">
+                  <a href="https://github.com/lottieorton/morse-translator"
+                    >Morse Translator</a
+                  >
+                </h3>
+                <a href="https://github.com/lottieorton/morse-translator">
+                  <img
+                    src="./assets/morse-translator.png"
+                    class="card__image"
+                    alt="Morse Translator website"
+                  />
+                </a>
+                <p class="card__text">
+                  Translation app that converts English to Morse Code and vice
+                  versa.
+                </p>
+                <p class="card__text card__text--small">
+                  Languages: JavaScript, HTML, SCSS
+                </p>
+              </div>
+
+              <div class="card page-block__sub-section--purple carousel__card">
+                <h3 class="card__header">
+                  <a href="https://github.com/lottieorton/google-books"
+                    >Google Books</a
+                  >
+                </h3>
+                <a href="https://github.com/lottieorton/google-books">
+                  <img
+                    src="./assets/google-books.png"
+                    class="card__image"
+                    alt="Google books app"
+                  />
+                </a>
+                <p class="card__text">
+                  Search for your favourite books using this React app that
+                  utilises the Google Books API.
+                </p>
+                <p class="card__text card__text--small">
+                  Languages: JavaScript, React, SCSS
+                </p>
+              </div>
+
+              <div class="card page-block__sub-section--purple carousel__card">
+                <h3 class="card__header">
+                  <a href="https://github.com/lottieorton/minesweeper"
+                    >Minesweeper</a
+                  >
+                </h3>
+                <a href="https://github.com/lottieorton/minesweeper">
+                  <img
+                    src="./assets/minesweeper.png"
+                    class="card__image"
+                    alt="Minesweeper game"
+                  />
+                </a>
+                <p class="card__text">
+                  Play an interactive, text-based version of the classic
+                  Minesweeper game in your terminal!
+                </p>
+                <p class="card__text card__text--small">Languages: Java</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel__btn carousel__btn--next"
+            id="nextBtn"
+            aria-label="Next"
+          >
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
