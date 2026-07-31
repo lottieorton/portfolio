@@ -1,28 +1,26 @@
-@use '../mixins/media_queries' as q;
-@use '../mixins/mixins' as m;
+@use "../mixins/media_queries" as q;
+@use "../mixins/mixins" as m;
 
 .projects {
-    @include m.flex(column);
-    align-items: center;
-    gap: 1.5em;
-    &__grid {
-        display: grid;
-        justify-items: center;
-        width: 100%;
-        grid-template: 1fr 1fr 1fr / 1fr;
-        gap: 2em;
-    }
+  @include m.flex(column);
+  align-items: center;
+  gap: 1.5em;
 
-    @include q.large-tablet {
-        gap: 4em;
-        &__grid {
-            grid-template: 1fr 1fr / 1fr 1fr;
-            gap: 2em;
-        }
+  @media (max-width: 768px) {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  @include q.large-tablet {
+    gap: 2em;
+    &__grid {
+      grid-template: 1fr 1fr / 1fr 1fr;
+      gap: 2em;
     }
-    @include q.desktop {
-        &__grid {
-            grid-template: 1fr 1fr / 1fr 1fr 1fr;
-        }
+  }
+  @include q.desktop {
+    &__grid {
+      grid-template: 1fr 1fr / 1fr 1fr 1fr;
     }
+  }
 }
