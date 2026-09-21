@@ -1,4 +1,4 @@
-const headingText = "Hi, I'm Lottie Orton";
+const headingText = "Lottie Orton";
 const subHeadingText = "Junior Software Engineer";
 let i = 0;
 let j = 0;
