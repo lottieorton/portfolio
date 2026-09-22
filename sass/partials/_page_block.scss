@@ -63,6 +63,7 @@
   &__text {
     font-size: 0.85em;
     text-align: center;
+    margin: 0;
 
     &--sm {
       font-size: 0.6em;
@@ -103,8 +104,8 @@
       &--sm {
         font-size: 0.7em;
       }
-      &--right {
-        text-align: right;
+      &--left {
+        text-align: left;
       }
     }
   }
