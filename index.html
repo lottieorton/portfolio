@@ -12,7 +12,7 @@
     <script src="./script.js" type="module" defer></script>
   </head>
   <body>
-    <nav class="navbar page-block page-block--thin">
+    <nav id="nav" class="navbar page-block page-block--thin">
       <a href="./index.html" class="navbar__icon">
         <i class="fa-regular fa-house"></i>
       </a>
@@ -31,11 +31,7 @@
           <a href="#projects" class="navbar__link">Projects</a>
         </li>
         <li>
-          <a
-            href="./contact.html"
-            class="btn--accent btn--sm"
-            >Get In Touch</a
-          >
+          <a href="./contact.html" class="btn--accent btn--sm">Get In Touch</a>
         </li>
       </ul>
     </nav>
@@ -43,40 +39,38 @@
       <div class="header__main">
         <div class="header__headings">
           <h1
-          class="page-block__heading page-block__heading--large page-block__heading--left typewriter"
+            class="page-block__heading page-block__heading--large page-block__heading--left typewriter"
           ></h1>
           <h2
-          id="sub-heading"
-          class="page-block__heading page-block__heading--small page-block__heading--lblue page-block__heading--left"
+            id="sub-heading"
+            class="page-block__heading page-block__heading--small page-block__heading--lblue page-block__heading--left"
           ></h2>
         </div>
         <div class="header__link-list">
-          <a
-          href="#projects"
-          class="btn--accent btn--lg"
-          >View My Projects <i class="fa-solid fa-arrow-right"></i
-            ></a>
-            <div class="icon-list icon-list--sm">
-              <a
-              href="https://github.com/lottieorton"
-              class="icon-list__icons"
-              >
+          <a href="#projects" class="btn--accent btn--lg">
+            View My Projects <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <div class="icon-list icon-list--sm">
+            <a href="https://github.com/lottieorton" class="icon-list__icons">
               <i class="fa-brands fa-github"></i>
             </a>
             <a
-            href="https://www.linkedin.com/in/charlotte-orton/"
-            class="icon-list__icons"
+              href="https://www.linkedin.com/in/charlotte-orton/"
+              class="icon-list__icons"
             >
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a href="./contact.html" class="icon-list__icons">
-            <i class="fa-regular fa-envelope"></i>
-          </a>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="./contact.html" class="icon-list__icons">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
       <p class="page-block__text page-block__text--sm">
-        SCROLL TO EXPLORE <span><i class="fa-solid fa-arrow-down page-block__text--accent"></span></i>
+        SCROLL TO EXPLORE
+        <span
+          ><i class="fa-solid fa-arrow-down page-block__text--accent"></i
+        ></span>
       </p>
     </header>
     <main>
@@ -168,228 +162,212 @@
           </button>
           <div class="carousel__container">
             <div class="carousel__track" id="carousel-track">
-              <div
-                class="card carousel__card active"
-              >
-              <a href="https://github.com/lottieorton/employees">
-                <img
-                  src="./assets/employee-creator.png"
-                  class="card__image"
-                  alt="Employee creator website"
-                />
-              </a>
-                  
-              <div class="card__content">
-                <h3 class="card__header">
-                  <a href="https://github.com/lottieorton/employees"
-                  >Employee Creator</a
-                  >
-                </h3>
-                <p class="card__text">
-                  Manage your workforce through this responsive, full stack-app
-                  employee management app.
-                </p>
-                <ul class="card__language-list">
-                  <li class="card__language">Java</li>
-                  <li class="card__language">SpringBoot</li>
-                  <li class="card__language">React</li>
-                  <li class="card__language">TypeScript</li>
-                  <li class="card__language">Tailwind</li>
-                  <li class="card__language">MySQL</li>
-                </ul>
-              </div>
+              <div class="card carousel__card active">
+                <a href="https://github.com/lottieorton/employees">
+                  <img
+                    src="./assets/employee-creator.png"
+                    class="card__image"
+                    alt="Employee creator website"
+                  />
+                </a>
+
+                <div class="card__content">
+                  <h3 class="card__header">
+                    <a href="https://github.com/lottieorton/employees"
+                      >Employee Creator</a
+                    >
+                  </h3>
+                  <p class="card__text">
+                    Manage your workforce through this responsive, full
+                    stack-app employee management app.
+                  </p>
+                  <ul class="card__language-list">
+                    <li class="card__language">Java</li>
+                    <li class="card__language">SpringBoot</li>
+                    <li class="card__language">React</li>
+                    <li class="card__language">TypeScript</li>
+                    <li class="card__language">Tailwind</li>
+                    <li class="card__language">MySQL</li>
+                  </ul>
+                </div>
               </div>
 
-              <div
-                class="card carousel__card"
-              >
-              <a href="https://github.com/lottieorton/todos">
+              <div class="card carousel__card">
+                <a href="https://github.com/lottieorton/todos">
                   <img
                     src="./assets/todos.png"
                     class="card__image"
                     alt="Todos app"
                   />
-                </a>  
-              <div class="card__content">
-              <h3 class="card__header">
-                  <a href="https://github.com/lottieorton/todos">Todos</a>
-                </h3>
-                
-                <p class="card__text">
-                  Streamline your daily tasks and categorize your workflow with
-                  this full-stack productivity app.
-                </p>
-                <ul class="card__language-list">
-                  <li class="card__language">Java</li>
-                  <li class="card__language">SpringBoot</li>
-                  <li class="card__language">React</li>
-                  <li class="card__language">TypeScript</li>
-                  <li class="card__language">SCSS</li>
-                </ul>
-              </div>
+                </a>
+                <div class="card__content">
+                  <h3 class="card__header">
+                    <a href="https://github.com/lottieorton/todos">Todos</a>
+                  </h3>
+
+                  <p class="card__text">
+                    Streamline your daily tasks and categorize your workflow
+                    with this full-stack productivity app.
+                  </p>
+                  <ul class="card__language-list">
+                    <li class="card__language">Java</li>
+                    <li class="card__language">SpringBoot</li>
+                    <li class="card__language">React</li>
+                    <li class="card__language">TypeScript</li>
+                    <li class="card__language">SCSS</li>
+                  </ul>
+                </div>
               </div>
 
-              <div
-                class="card carousel__card"
-              >
-              <a href="https://github.com/lottieorton/minefield-project">
-                <img
-                  src="./assets/minefield.jpg"
-                  class="card__image"
-                  alt="Minefield website"
-                />
-              </a>
-              <div class="card__content">
-                <h3 class="card__header">
-                  <a href="https://github.com/lottieorton/minefield-project"
-                    >Minefield</a
-                  >
-                </h3>
-                <p class="card__text">
-                  Clear all mines in the field, at your selected difficulty
-                  level. Create a profile and see your success rates.
-                </p>
-                <ul class="card__language-list">
-                  <li class="card__language">JavaScript</li>
-                  <li class="card__language">React</li>
-                  <li class="card__language">Node.js</li>
-                  <li class="card__language">Express</li>
-                  <li class="card__language">PostgreSQL</li>
-                  <li class="card__language">HTML</li>
-                  <li class="card__language">CSS</li>
-                </ul>
-              </div>
+              <div class="card carousel__card">
+                <a href="https://github.com/lottieorton/minefield-project">
+                  <img
+                    src="./assets/minefield.jpg"
+                    class="card__image"
+                    alt="Minefield website"
+                  />
+                </a>
+                <div class="card__content">
+                  <h3 class="card__header">
+                    <a href="https://github.com/lottieorton/minefield-project"
+                      >Minefield</a
+                    >
+                  </h3>
+                  <p class="card__text">
+                    Clear all mines in the field, at your selected difficulty
+                    level. Create a profile and see your success rates.
+                  </p>
+                  <ul class="card__language-list">
+                    <li class="card__language">JavaScript</li>
+                    <li class="card__language">React</li>
+                    <li class="card__language">Node.js</li>
+                    <li class="card__language">Express</li>
+                    <li class="card__language">PostgreSQL</li>
+                    <li class="card__language">HTML</li>
+                    <li class="card__language">CSS</li>
+                  </ul>
+                </div>
               </div>
 
-              <div
-                class="card carousel__card"
-              >
-              <a href="https://github.com/lottieorton/google-books">
-                <img
-                src="./assets/google-books.png"
-                class="card__image"
-                alt="Google books app"
-                />
-              </a>
-              <div class="card__content">
-                <h3 class="card__header">
-                  <a href="https://github.com/lottieorton/google-books"
-                    >Google Books</a
-                  >
-                </h3>
-                <p class="card__text">
-                  Search for your favourite books using this React app that
-                  utilises the Google Books API.
-                </p>
-                <ul class="card__language-list">
-                  <li class="card__language">JavaScript</li>
-                  <li class="card__language">React</li>
-                  <li class="card__language">SCSS</li>
-                </ul>
-              </div>
+              <div class="card carousel__card">
+                <a href="https://github.com/lottieorton/google-books">
+                  <img
+                    src="./assets/google-books.png"
+                    class="card__image"
+                    alt="Google books app"
+                  />
+                </a>
+                <div class="card__content">
+                  <h3 class="card__header">
+                    <a href="https://github.com/lottieorton/google-books"
+                      >Google Books</a
+                    >
+                  </h3>
+                  <p class="card__text">
+                    Search for your favourite books using this React app that
+                    utilises the Google Books API.
+                  </p>
+                  <ul class="card__language-list">
+                    <li class="card__language">JavaScript</li>
+                    <li class="card__language">React</li>
+                    <li class="card__language">SCSS</li>
+                  </ul>
+                </div>
               </div>
 
-              <div
-                class="card carousel__card"
-              >
-              <a href="https://github.com/lottieorton/minesweeper">
-                <img
-                src="./assets/minesweeper.png"
-                class="card__image"
-                alt="Minesweeper game"
-                />
-              </a>
-              <div class="card__content">
-                <h3 class="card__header">
-                  <a href="https://github.com/lottieorton/minesweeper"
-                    >Minesweeper</a
-                  >
-                </h3>
-                <p class="card__text">
-                  Play an interactive, text-based version of the classic
-                  Minesweeper game in your terminal!
-                </p>
-                <ul class="card__language-list">
-                  <li class="card__language">Java</li>
-                </ul>
-              </div>
+              <div class="card carousel__card">
+                <a href="https://github.com/lottieorton/minesweeper">
+                  <img
+                    src="./assets/minesweeper.png"
+                    class="card__image"
+                    alt="Minesweeper game"
+                  />
+                </a>
+                <div class="card__content">
+                  <h3 class="card__header">
+                    <a href="https://github.com/lottieorton/minesweeper"
+                      >Minesweeper</a
+                    >
+                  </h3>
+                  <p class="card__text">
+                    Play an interactive, text-based version of the classic
+                    Minesweeper game in your terminal!
+                  </p>
+                  <ul class="card__language-list">
+                    <li class="card__language">Java</li>
+                  </ul>
+                </div>
               </div>
 
-              <div
-                class="card carousel__card"
-              >
-              <a href="https://github.com/lottieorton/reddit-project">
-                <img
-                src="./assets/reddit.png"
-                class="card__image"
-                alt="Reddit website"
-                />
-              </a>
-              <div class="card__content">
-                <h3 class="card__header">
-                  <a href="https://github.com/lottieorton/reddit-project"
-                    >Reddit</a
-                  >
-                </h3>
-                <p class="card__text">A Reddit application</p>
-                <ul class="card__language-list">
-                  <li class="card__language">JavaScript</li>
-                  <li class="card__language">HTML</li>
-                  <li class="card__language">CSS</li>
-                </ul>
-              </div>
+              <div class="card carousel__card">
+                <a href="https://github.com/lottieorton/reddit-project">
+                  <img
+                    src="./assets/reddit.png"
+                    class="card__image"
+                    alt="Reddit website"
+                  />
+                </a>
+                <div class="card__content">
+                  <h3 class="card__header">
+                    <a href="https://github.com/lottieorton/reddit-project"
+                      >Reddit</a
+                    >
+                  </h3>
+                  <p class="card__text">A Reddit application</p>
+                  <ul class="card__language-list">
+                    <li class="card__language">JavaScript</li>
+                    <li class="card__language">HTML</li>
+                    <li class="card__language">CSS</li>
+                  </ul>
+                </div>
               </div>
 
-              <div
-                class="card carousel__card"
-              >
-              <a href="https://github.com/lottieorton/fight-simulator">
-                <img
-                src="./assets/fight-sim.jpg"
-                class="card__image"
-                alt="Fight Simulator game"
-                />
-              </a>
-              <div class="card__content">
-                <h3 class="card__header">
-                  <a href="https://github.com/lottieorton/fight-simulator"
-                    >Fight Simulator</a
-                  >
-                </h3>
-                <p class="card__text">A terminal based fight simulator game</p>
-                <ul class="card__language-list">
-                  <li class="card__language">JavaScript</li>
-                </ul>
-              </div>
-              </div>
-
-              <div
-                class="card carousel__card"
-              >
-              <a href="https://github.com/lottieorton/assessment-cafe">
-                <img
-                src="./assets/cafe.png"
-                class="card__image"
-                alt="Cafe website"
-                />
-              </a>
-              <div class="card__content">
-                <h3 class="card__header">
-                  <a href="https://github.com/lottieorton/assessment-cafe"
-                    >Cafe website</a
-                  >
-                </h3>
-                <p class="card__text">A responsive cafe website</p>
-                <ul class="card__language-list">
-                  <li class="card__language">HTML</li>
-                  <li class="card__language">SCSS</li>
-                </ul>
-              </div>
+              <div class="card carousel__card">
+                <a href="https://github.com/lottieorton/fight-simulator">
+                  <img
+                    src="./assets/fight-sim.jpg"
+                    class="card__image"
+                    alt="Fight Simulator game"
+                  />
+                </a>
+                <div class="card__content">
+                  <h3 class="card__header">
+                    <a href="https://github.com/lottieorton/fight-simulator"
+                      >Fight Simulator</a
+                    >
+                  </h3>
+                  <p class="card__text">
+                    A terminal based fight simulator game
+                  </p>
+                  <ul class="card__language-list">
+                    <li class="card__language">JavaScript</li>
+                  </ul>
+                </div>
               </div>
 
-              <div
-                class="card carousel__card"
-                >
+              <div class="card carousel__card">
+                <a href="https://github.com/lottieorton/assessment-cafe">
+                  <img
+                    src="./assets/cafe.png"
+                    class="card__image"
+                    alt="Cafe website"
+                  />
+                </a>
+                <div class="card__content">
+                  <h3 class="card__header">
+                    <a href="https://github.com/lottieorton/assessment-cafe"
+                      >Cafe website</a
+                    >
+                  </h3>
+                  <p class="card__text">A responsive cafe website</p>
+                  <ul class="card__language-list">
+                    <li class="card__language">HTML</li>
+                    <li class="card__language">SCSS</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card carousel__card">
                 <a href="https://github.com/lottieorton/hangman">
                   <img
                     src="./assets/hangman.png"
@@ -397,48 +375,47 @@
                     alt="Hangman game"
                   />
                 </a>
-              <div class="card__content">
-                <h3 class="card__header">
-                  <a href="https://github.com/lottieorton/hangman">Hangman</a>
-                </h3>
-                <p class="card__text">
-                  A 'walk the plank' version of the classic Hangman game, by
-                  spelling out the concealed word before the character dives
-                  into the water.
-                </p>
-                <ul class="card__language-list">
-                  <li class="card__language">JavaScript</li>
-                  <li class="card__language">HTML</li>
-                  <li class="card__language">SCSS</li>
-                </ul>
-              </div>
+                <div class="card__content">
+                  <h3 class="card__header">
+                    <a href="https://github.com/lottieorton/hangman">Hangman</a>
+                  </h3>
+                  <p class="card__text">
+                    A 'walk the plank' version of the classic Hangman game, by
+                    spelling out the concealed word before the character dives
+                    into the water.
+                  </p>
+                  <ul class="card__language-list">
+                    <li class="card__language">JavaScript</li>
+                    <li class="card__language">HTML</li>
+                    <li class="card__language">SCSS</li>
+                  </ul>
+                </div>
               </div>
 
-              <div
-                class="card carousel__card"
-              >
-              <a href="https://github.com/lottieorton/morse-translator">
-                <img
-                  src="./assets/morse-translator.png"
-                  class="card__image"
-                  alt="Morse Translator website"
-                />
-              </a>
-              <div class="card__content">
-                <h3 class="card__header">
-                  <a href="https://github.com/lottieorton/morse-translator"
-                    >Morse Translator</a>
-                </h3>
-                <p class="card__text">
-                  Translation app that converts English to Morse Code and vice
-                  versa.
-                </p>
-                <ul class="card__language-list">
-                  <li class="card__language">JavaScript</li>
-                  <li class="card__language">HTML</li>
-                  <li class="card__language">SCSS</li>
-                </ul>
-              </div>
+              <div class="card carousel__card">
+                <a href="https://github.com/lottieorton/morse-translator">
+                  <img
+                    src="./assets/morse-translator.png"
+                    class="card__image"
+                    alt="Morse Translator website"
+                  />
+                </a>
+                <div class="card__content">
+                  <h3 class="card__header">
+                    <a href="https://github.com/lottieorton/morse-translator"
+                      >Morse Translator</a
+                    >
+                  </h3>
+                  <p class="card__text">
+                    Translation app that converts English to Morse Code and vice
+                    versa.
+                  </p>
+                  <ul class="card__language-list">
+                    <li class="card__language">JavaScript</li>
+                    <li class="card__language">HTML</li>
+                    <li class="card__language">SCSS</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -452,5 +429,27 @@
         </div>
       </section>
     </main>
+    <footer class="footer page-block page-block--thin page-block--blue">
+      <a href="#nav" class="page-block__text page-block__text--sm">
+        SCROLL BACK TO THE TOP
+        <span
+          ><i class="fa-solid fa-arrow-up page-block__text--accent"></i
+        ></span>
+      </a>
+      <div class="icon-list icon-list--sm">
+        <a href="https://github.com/lottieorton" class="icon-list__icons">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/charlotte-orton/"
+          class="icon-list__icons"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="./contact.html" class="icon-list__icons">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
