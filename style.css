@@ -735,63 +735,78 @@ a:hover {
   flex-direction: column;
   justify-content: flex-start;
   width: 350px;
-  padding: 1.5em;
-  gap: 1.5em;
+  color: #234049;
+}
+.card a {
+  color: #234049;
+}
+.card a:visited {
+  color: #234049;
+}
+.card {
+  background-color: white;
   border-radius: 20px;
-  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+}
+.card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.5em;
+  gap: 1em;
 }
 .card__header {
-  font-size: 1.5em;
-  text-align: center;
+  font-size: 1.35em;
   margin: 0;
 }
 .card__header a:hover {
   text-decoration: underline;
 }
 .card__image {
-  object-fit: contain;
   width: 100%;
-  border-radius: 20px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
 }
 .card__text {
   margin: 0;
-  text-align: center;
-  font-size: 1.1em;
+  font-size: 0.85em;
 }
 .card__text--small {
   font-size: 1em;
 }
+.card__language-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 0.4em;
+  margin: 0;
+  padding: 0;
+  padding-top: 0.5em;
+}
+.card__language {
+  color: #005c66;
+  background-color: #eaefef;
+  font-size: 0.8em;
+  font-weight: 500;
+  border: 1px solid #005c66;
+  border-radius: 5px;
+  padding: 0.25em;
+}
 @media screen and (min-width: 769px) {
-  .card {
-    padding: 1.75em;
-    gap: 1.75em;
-  }
-  .card__header {
-    font-size: 1.75em;
-  }
-  .card__image {
-    max-width: 435px;
-  }
   .card__text {
-    font-size: 1.25em;
+    font-size: 0.9em;
   }
   .card__text--small {
     font-size: 1.1em;
   }
 }
 @media screen and (min-width: 2000px) {
-  .card {
-    padding: 2.5em;
-    gap: 2em;
-  }
   .card__header {
-    font-size: 2.5em;
-  }
-  .card__image {
-    max-width: 800px;
+    font-size: 1.5em;
   }
   .card__text {
-    font-size: 1.6em;
+    font-size: 1.25em;
   }
   .card__text--small {
     font-size: 1.25em;
@@ -826,7 +841,7 @@ a:hover {
 }
 @media screen and (min-width: 769px) {
   .carousel__container {
-    mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
   }
 }
 .carousel__track {
@@ -841,36 +856,32 @@ a:hover {
   border-radius: 50%;
   background-color: #234049;
   border: none;
-  padding: 0.5em 0.35em;
+  height: 48px;
+  aspect-ratio: 1/1;
   z-index: 10;
   color: white;
-  font-size: 1.25em;
+  font-size: 0.9em;
 }
 .carousel__btn--prev {
-  left: calc(50% - 3rem);
+  left: calc(50% - 3.25rem);
 }
 .carousel__btn--next {
-  right: calc(50% - 3rem);
+  right: calc(50% - 3.25rem);
 }
 @media screen and (min-width: 769px) {
   .carousel__btn {
     top: 50%;
     bottom: auto;
-    border-radius: 15px;
-    padding: 0.6em 0.35em;
     transform: translateY(-50%);
-    font-size: 1.5em;
   }
   .carousel__btn--prev {
-    left: 1.5em;
+    left: 0em;
   }
   .carousel__btn--next {
-    right: 1.5em;
+    right: 0em;
   }
 }
 .carousel__card {
-  opacity: 0.4;
-  transform: scale(0.85);
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 .carousel__card.active {
