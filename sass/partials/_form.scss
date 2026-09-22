@@ -1,92 +1,141 @@
-@use '../mixins/media_queries' as q;
-@use '../mixins/mixins' as m;
-
-$form-gap: 1em;
-$form-gap--large: 1.5em;
-$form-gap--xlarge: 2em;
+@use "../variables/colors" as c;
+@use "../mixins/media_queries" as q;
+@use "../mixins/mixins" as m;
 
 .form {
+  @include m.flex(column);
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  gap: 2.5em;
+  border-radius: 20px;
+  &__headings {
     @include m.flex(column);
-    align-items: center;
+    gap: 1em;
     width: 100%;
-    padding: 2em 1.5em;
-    gap: $form-gap;
-    border-radius: 20px;
-    @include m.shadow;
-    &__heading {
-        font-size: 1.5em;
-        margin: 0;
-        text-align: center;
+  }
+  &__heading {
+    font-size: 1.25em;
+    font-weight: 500;
+    margin: 0;
+    width: 100%;
+  }
+  &__text {
+    font-size: 0.9em;
+    color: c.$light-blue;
+    margin: 0;
+
+    &--sm {
+      font-size: 0.75em;
+      font-weight: 500;
     }
-    &__name {
-        @include m.flex(row, space-between);
-        width: 100%;
-        gap: $form-gap;
+  }
+  &__divider {
+    width: 80px;
+    height: 4px;
+    background-color: c.$accent;
+    border-radius: 2px;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    width: 100%;
+  }
+
+  &__field {
+    @include m.flex(column);
+    width: 100%;
+    gap: 0.35em;
+  }
+  &__input {
+    color: white;
+    font-size: 0.85em;
+    padding: 0.75em;
+    background-color: #ffffff10;
+    border: 1px solid #ffffff25;
+    border-radius: 5px;
+    &::placeholder {
+      color: c.$light-blue;
+      opacity: 0.6;
+    }
+    &--textarea {
+      height: 6em;
+    }
+  }
+
+  &__button {
+    color: white;
+    background-color: c.$accent;
+    padding: 0.5em;
+    border-radius: 5px;
+    font-weight: 700;
+    border: none;
+    box-shadow: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  @include q.large-tablet {
+    &__heading {
+      font-size: 1.5em;
+    }
+    &__text {
+      font-size: 1em;
+      &--sm {
+        font-size: 0.85em;
+      }
+    }
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5em;
+    }
+    &__fields {
+      gap: 1.5em;
     }
     &__field {
-        width: 100%;
-        font-size: 1.1em;
-        padding: 0.25em;
-        &--textarea {
-            height: 4em;
-        }
+      gap: 0.6em;
+      &--wide {
+        grid-column: span 2;
+      }
+    }
+    &__input {
+      font-size: 1em;
+      padding: 1em;
     }
     &__button {
-        padding: 0.5em;
-        border-radius: 5px;
-        font-weight: 700;
-        &:hover {
-            cursor: pointer;
-        }
+      padding: 1em;
+      border-radius: 10px;
     }
+  }
 
-    @include q.large-tablet {
-        padding: 3em 2.5em;
-        gap: $form-gap--large;
-        &__heading {
-            font-size: 1.75em;
-        }
-        &__name {
-            gap: $form-gap--large;
-        }
-        &__field {
-            font-size: 1.25em;
-            padding: 0.5em;
-            &--textarea {
-                height: 6em;
-            }
-        }
-        &__button {
-            padding: 0.75em;
-            border-radius: 10px;
-        }
+  @include q.large-desktop {
+    max-width: 1000px;
+    &__heading {
+      font-size: 2em;
     }
-
-    @include q.laptop {
-        max-width: 800px;
+    &__text {
+      font-size: 1.4em;
+      &--sm {
+        font-size: 1.1em;
+      }
     }
-
-    @include q.large-desktop {
-        padding: 4.5em 4em;
-        gap: $form-gap--xlarge;
-        max-width: 1000px;
-        &__heading {
-            font-size: 3em;
-        }
-        &__name {
-            gap: $form-gap--xlarge;
-        }
-        &__field {
-            font-size: 2em;
-            padding: 0.75em;
-            &--textarea {
-                height: 10em;
-            }
-        }
-        &__button {
-            padding: 1em;
-            border-radius: 20px;
-        }
+    &__fields {
+      gap: 2em;
     }
+    &__field {
+      gap: 1em;
+    }
+    &__input {
+      font-size: 1.4em;
+      padding: 1.25em;
+      &--textarea {
+        height: 10em;
+      }
+    }
+    &__button {
+      padding: 1.5em;
+    }
+  }
 }
-            

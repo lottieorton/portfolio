@@ -39,77 +39,96 @@
         class="contact page-block page-block--full-page page-block--blue"
       >
         <div class="contact__content">
-          <h2 class="page-block__heading page-block__heading--left">
+          <h1 class="page-block__heading page-block__heading--left">
             Contact Me
-          </h2>
-          <div class="contact__details">
-            <div class="contact__info">
-              <a href="https://github.com/lottieorton"
-                ><i class="fa-brands fa-github contact__icon"></i
-              ></a>
-              <h3 class="contact__link">
-                <a href="https://github.com/lottieorton"
-                  >github.com/<wbr />lottieorton</a
-                >
-              </h3>
-            </div>
-            <div class="contact__info">
-              <a href="https://www.linkedin.com/in/charlotte-orton/"
-                ><i class="fa-brands fa-linkedin contact__icon"></i
-              ></a>
-              <h3 class="contact__link">
-                <a href="https://www.linkedin.com/in/charlotte-orton/"
-                  >linkedin.com/in/<wbr />charlotte-orton</a
-                >
-              </h3>
-            </div>
+          </h1>
+          <div class="icon-list icon-list--sm">
+            <a href="https://github.com/lottieorton" class="icon-list__icons">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/charlotte-orton/"
+              class="icon-list__icons"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
           </div>
         </div>
         <form
-          class="form page-block__sub-section page-block__sub-section--pale"
+          class="form"
           action="https://formspree.io/f/mojzyqnz"
           method="POST"
         >
-          <h3 class="form__heading">Send Me a Message</h3>
-          <div class="form__name">
-            <input
-              type="text"
-              id="firstnameInput"
-              class="form__field"
-              name="firstName"
-              placeholder="First Name"
-              required
-            />
-            <input
-              type="text"
-              id="lastnameInput"
-              class="form__field"
-              name="lastName"
-              placeholder="Last Name"
-              required
-            />
+          <div class="form__headings">
+            <h3 class="form__heading">
+              Let's connect! Plese feel free to send me a message.
+            </h3>
+            <div class="form__divider"></div>
+            <p class="form__text">
+              I would love to hear from you so please send over an email and I
+              will get back to you as soon as possible. Also, feel free to
+              checkout my GitHub account and LinkedIn for more information about
+              me.
+            </p>
           </div>
-          <input
-            type="email"
-            id="emailInput"
-            class="form__field"
-            name="email"
-            placeholder="Email Address"
-            required
-          />
-          <textarea
-            id="messageInput"
-            class="form__field form__field--textarea"
-            name="message"
-            required
-            placeholder="Enter your message here..."
-          ></textarea>
-          <button
-            type="submit"
-            class="form__field form__button page-block__sub-section--pale__button"
-          >
-            Send Message
-          </button>
+          <div class="form__grid">
+            <div class="form__field">
+              <label for="firstnameInput" class="form__text form__text--sm"
+                >First Name</label
+              >
+              <input
+                type="text"
+                id="firstnameInput"
+                name="firstName"
+                class="form__input"
+                placeholder="e.g. Lottie"
+                required
+              />
+            </div>
+            <div class="form__field">
+              <label for="lastnameInput" class="form__text form__text--sm"
+                >Last Name</label
+              >
+              <input
+                type="text"
+                id="lastnameInput"
+                class="form__input"
+                name="lastName"
+                placeholder="e.g. Orton"
+                required
+              />
+            </div>
+            <div class="form__field form__field--wide">
+              <label for="emailInput" class="form__text form__text--sm"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                id="emailInput"
+                class="form__input"
+                name="email"
+                placeholder="myemail@example.com"
+                required
+              />
+            </div>
+            <div class="form__field form__field--wide">
+              <label for="messageInput" class="form__text form__text--sm"
+                >Your Message</label
+              >
+              <textarea
+                id="messageInput"
+                class="form__input form__input--textarea"
+                name="message"
+                required
+                placeholder="Enter your message here..."
+              ></textarea>
+            </div>
+            <div class="form__field form__field--wide">
+              <button type="submit" class="form__button">
+                Send Message <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
         </form>
       </section>
     </main>

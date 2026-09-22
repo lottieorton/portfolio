@@ -24,26 +24,6 @@
   &--full-page {
     min-height: 92vh;
   }
-  &__sub-section {
-    &--dark-blue {
-      background-color: c.$dark-blue-text;
-      color: white;
-      a {
-        color: white;
-        &:visited {
-          color: white;
-        }
-      }
-    }
-    &--pale {
-      background-color: c.$bg;
-      color: c.$teal;
-      &__button {
-        background-color: c.$teal;
-        color: white;
-      }
-    }
-  }
   &__heading {
     font-size: 1.75em;
     text-align: center;
@@ -84,7 +64,7 @@
       min-height: 90vh;
     }
     &__heading {
-      font-size: 2em;
+      font-size: 2.2em;
       &--large {
         font-size: 4.5em;
       }

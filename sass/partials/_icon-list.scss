@@ -3,7 +3,6 @@
 
 .icon-list {
   @include m.flex;
-  justify-content: center;
 
   &--sm {
     height: 35px;
