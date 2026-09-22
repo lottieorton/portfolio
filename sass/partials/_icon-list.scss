@@ -1,0 +1,24 @@
+@use "../variables/colors" as c;
+@use "../mixins/mixins" as m;
+
+.icon-list {
+  @include m.flex;
+  justify-content: center;
+
+  &--sm {
+    height: 35px;
+    font-size: 1em;
+    gap: 0.5em;
+  }
+
+  &__icons {
+    @include m.flex;
+    color: c.$light-blue;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff10;
+    border: 1px solid #ffffff15;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+  }
+}

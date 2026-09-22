@@ -1,13 +1,35 @@
-@use '../mixins/media_queries' as q;
-@use '../mixins/mixins' as m;
+@use "../mixins/media_queries" as q;
+@use "../mixins/mixins" as m;
 
 .header {
-    @include m.flex(column, center);
-    align-items: center;
-    height: 70vh;
-    gap: 1em;
+  @include m.flex(column, center);
+  align-items: center;
+  height: 70vh;
 
-    @include q.large-tablet {
-        align-items: flex-start;
+  &__main {
+    @include m.flex(column);
+    gap: 2em;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  &__headings {
+    @include m.flex(column);
+    gap: 0.5em;
+  }
+
+  &__link-list {
+    @include m.flex(column);
+    align-items: center;
+    gap: 1em;
+    padding-bottom: 3em;
+  }
+
+  @include q.large-tablet {
+    align-items: flex-start;
+    &__link-list {
+      flex-direction: row;
+      gap: 1.5em;
     }
+  }
 }

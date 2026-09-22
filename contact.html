@@ -1,62 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Me</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="https://kit.fontawesome.com/4f07e26e28.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/4f07e26e28.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <nav class="navbar page-block page-block--thin">
-        <a href="./index.html" class="navbar__icon">
-            <i class="fa-solid fa-house"></i>
-        </a>
-        <input type="checkbox" id="navbar-toggle" class="navbar__toggle" />
-        <label for="navbar-toggle" class="navbar__icon navbar__icon--toggle">
-            <i class="fa-solid fa-angle-down"></i>
-        </label>
-        <ul class="navbar__list">
-            <li>
-                <a href="./index.html#about" class="navbar__link">About</a>
-            </li>
-            <li>
-                <a href="./index.html#tech-stack" class="navbar__link">Tech Stack</a>
-            </li>
-            <li>
-                <a href="./index.html#projects" class="navbar__link">Projects</a>
-            </li>
-            <li>
-                <a href="./contact.html" class="navbar__link">Contact Me</a>
-            </li>
-        </ul>
+      <a href="./index.html" class="navbar__icon">
+        <i class="fa-regular fa-house"></i>
+      </a>
+      <input type="checkbox" id="navbar-toggle" class="navbar__toggle" />
+      <label for="navbar-toggle" class="navbar__icon navbar__icon--toggle">
+        <i class="fa-solid fa-angle-down"></i>
+      </label>
+      <ul class="navbar__list">
+        <li>
+          <a href="./index.html#about" class="navbar__link">About</a>
+        </li>
+        <li>
+          <a href="./index.html#tech-stack" class="navbar__link">Tech Stack</a>
+        </li>
+        <li>
+          <a href="./index.html#projects" class="navbar__link">Projects</a>
+        </li>
+        <li>
+          <a href="./contact.html" class="btn--accent btn--sm">Get In Touch</a>
+        </li>
+      </ul>
     </nav>
     <main>
-        <section class="contact page-block page-block--full-page page-block--blue">
-            <div class="contact__content">
-                <h2 class="page-block__heading page-block__heading--left">Contact Me</h2>
-                <div class="contact__details">
-                    <div class="contact__info">
-                        <a href="https://github.com/lottieorton"><i class="fa-brands fa-github contact__icon"></i></a>
-                        <h3 class="contact__link"><a href="https://github.com/lottieorton">github.com/<wbr>lottieorton</a></h3>
-                    </div>
-                    <div class="contact__info">
-                        <a href="https://www.linkedin.com/in/charlotte-orton/"><i class="fa-brands fa-linkedin contact__icon"></i></a>
-                        <h3 class="contact__link"><a href="https://www.linkedin.com/in/charlotte-orton/">linkedin.com/in/<wbr>charlotte-orton</a></h3>
-                    </div>
-                </div>
+      <section
+        class="contact page-block page-block--full-page page-block--blue"
+      >
+        <div class="contact__content">
+          <h2 class="page-block__heading page-block__heading--left">
+            Contact Me
+          </h2>
+          <div class="contact__details">
+            <div class="contact__info">
+              <a href="https://github.com/lottieorton"
+                ><i class="fa-brands fa-github contact__icon"></i
+              ></a>
+              <h3 class="contact__link">
+                <a href="https://github.com/lottieorton"
+                  >github.com/<wbr />lottieorton</a
+                >
+              </h3>
             </div>
-            <form class="form page-block__sub-section page-block__sub-section--pale-blue" action="https://formspree.io/f/mojzyqnz" method="POST">
-                <h3 class="form__heading">Send Me a Message</h3>
-                <div class="form__name">
-                    <input type="text" id="firstnameInput" class="form__field" name="firstName" placeholder="First Name" required />
-                    <input type="text" id="lastnameInput" class="form__field" name="lastName" placeholder="Last Name" required />
-                </div>
-                <input type="email" id="emailInput" class="form__field" name="email" placeholder="Email Address" required />
-                <textarea id="messageInput" class="form__field form__field--textarea" name="message" required placeholder="Enter your message here..."></textarea>
-                <button type="submit" class="form__field form__button page-block__sub-section--pale-blue__button">Send Message</button>
-            </form>
-        </section>
+            <div class="contact__info">
+              <a href="https://www.linkedin.com/in/charlotte-orton/"
+                ><i class="fa-brands fa-linkedin contact__icon"></i
+              ></a>
+              <h3 class="contact__link">
+                <a href="https://www.linkedin.com/in/charlotte-orton/"
+                  >linkedin.com/in/<wbr />charlotte-orton</a
+                >
+              </h3>
+            </div>
+          </div>
+        </div>
+        <form
+          class="form page-block__sub-section page-block__sub-section--pale"
+          action="https://formspree.io/f/mojzyqnz"
+          method="POST"
+        >
+          <h3 class="form__heading">Send Me a Message</h3>
+          <div class="form__name">
+            <input
+              type="text"
+              id="firstnameInput"
+              class="form__field"
+              name="firstName"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              id="lastnameInput"
+              class="form__field"
+              name="lastName"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+          <input
+            type="email"
+            id="emailInput"
+            class="form__field"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+          <textarea
+            id="messageInput"
+            class="form__field form__field--textarea"
+            name="message"
+            required
+            placeholder="Enter your message here..."
+          ></textarea>
+          <button
+            type="submit"
+            class="form__field form__button page-block__sub-section--pale__button"
+          >
+            Send Message
+          </button>
+        </form>
+      </section>
     </main>
-</body>
+  </body>
 </html>

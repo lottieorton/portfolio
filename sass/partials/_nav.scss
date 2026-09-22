@@ -10,7 +10,7 @@
   &__icon {
     color: c.$light-blue;
     cursor: pointer;
-    font-size: 2em;
+    font-size: 1.25em;
   }
   &__toggle {
     display: none;
@@ -45,6 +45,7 @@
     }
     &__list {
       @include m.flex;
+      align-items: center;
       gap: 1.5em;
     }
   }

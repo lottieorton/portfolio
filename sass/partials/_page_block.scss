@@ -1,17 +1,18 @@
 @use "../mixins/media_queries" as q;
 @use "../variables/colors" as c;
+@use "../mixins/mixins" as m;
 
 .page-block {
   padding: 4em 2em;
   min-height: 60vh;
   &--blue {
     background-color: c.$teal;
-    color: c.$pale-blue;
+    color: white;
     a {
-      color: c.$pale-blue;
+      color: white;
     }
   }
-  &--pale-blue {
+  &--pale {
     background-color: c.$bg;
     color: c.$dark-blue-text;
   }
@@ -26,20 +27,20 @@
   &__sub-section {
     &--dark-blue {
       background-color: c.$dark-blue-text;
-      color: c.$pale-blue;
+      color: white;
       a {
-        color: c.$pale-blue;
+        color: white;
         &:visited {
-          color: c.$pale-blue;
+          color: white;
         }
       }
     }
-    &--pale-blue {
-      background-color: c.$pale-blue;
+    &--pale {
+      background-color: c.$bg;
       color: c.$teal;
       &__button {
         background-color: c.$teal;
-        color: c.$pale-blue;
+        color: white;
       }
     }
   }
@@ -54,10 +55,22 @@
       font-weight: 300;
       font-size: 1.25em;
     }
+    &--lblue {
+      color: c.$light-blue;
+    }
   }
+
   &__text {
     font-size: 0.85em;
     text-align: center;
+
+    &--sm {
+      font-size: 0.6em;
+    }
+
+    &--accent {
+      color: c.$accent;
+    }
   }
 
   @include q.large-tablet {
@@ -87,6 +100,9 @@
     }
     &__text {
       font-size: 1em;
+      &--sm {
+        font-size: 0.7em;
+      }
       &--right {
         text-align: right;
       }
@@ -107,6 +123,9 @@
     }
     &__text {
       font-size: 1.5em;
+      &--sm {
+        font-size: 0.9em;
+      }
     }
   }
 }

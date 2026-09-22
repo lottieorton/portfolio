@@ -14,7 +14,7 @@
   <body>
     <nav class="navbar page-block page-block--thin">
       <a href="./index.html" class="navbar__icon">
-        <i class="fa-solid fa-house"></i>
+        <i class="fa-regular fa-house"></i>
       </a>
       <input type="checkbox" id="navbar-toggle" class="navbar__toggle" />
       <label for="navbar-toggle" class="navbar__icon navbar__icon--toggle">
@@ -31,21 +31,56 @@
           <a href="#projects" class="navbar__link">Projects</a>
         </li>
         <li>
-          <a href="./contact.html" class="navbar__link">Contact Me</a>
+          <a
+            href="./contact.html"
+            class="btn--accent btn--sm"
+            >Get In Touch</a
+          >
         </li>
       </ul>
     </nav>
     <header class="header page-block page-block--blue">
-      <h1
-        class="page-block__heading page-block__heading--large page-block__heading--left typewriter"
-      ></h1>
-      <h2
-        id="sub-heading"
-        class="page-block__heading page-block__heading--small page-block__heading--left"
-      ></h2>
+      <div class="header__main">
+        <div class="header__headings">
+          <h1
+          class="page-block__heading page-block__heading--large page-block__heading--left typewriter"
+          ></h1>
+          <h2
+          id="sub-heading"
+          class="page-block__heading page-block__heading--small page-block__heading--lblue page-block__heading--left"
+          ></h2>
+        </div>
+        <div class="header__link-list">
+          <a
+          href="#projects"
+          class="btn--accent btn--lg"
+          >View My Projects <i class="fa-solid fa-arrow-right"></i
+            ></a>
+            <div class="icon-list icon-list--sm">
+              <a
+              href="https://github.com/lottieorton"
+              class="icon-list__icons"
+              >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+            href="https://www.linkedin.com/in/charlotte-orton/"
+            class="icon-list__icons"
+            >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="./contact.html" class="icon-list__icons">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+      <p class="page-block__text--sm">
+        SCROLL TO EXPLORE <span><i class="fa-solid fa-arrow-down page-block__text--accent"></span></i>
+      </p>
     </header>
     <main>
-      <section id="about" class="about page-block page-block--pale-blue">
+      <section id="about" class="about page-block page-block--pale">
         <img
           src="./assets/Lottie-profile.jpg"
           class="about__image"
@@ -119,7 +154,7 @@
           </div>
         </div>
       </section>
-      <section id="projects" class="projects page-block page-block--pale-blue">
+      <section id="projects" class="projects page-block page-block--pale">
         <h2 class="page-block__heading page-block__heading--right">
           My Projects...
         </h2>
