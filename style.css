@@ -263,7 +263,7 @@ a:hover {
   font-size: 0.6em;
 }
 .page-block__text--accent {
-  color: #e07a5f;
+  color: #df7558;
 }
 @media screen and (min-width: 769px) {
   .page-block {
@@ -641,7 +641,7 @@ a:hover {
 .form__divider {
   width: 80px;
   height: 4px;
-  background-color: #e07a5f;
+  background-color: #df7558;
   border-radius: 2px;
 }
 .form__grid {
@@ -674,7 +674,7 @@ a:hover {
 }
 .form__button {
   color: white;
-  background-color: #e07a5f;
+  background-color: #df7558;
   padding: 0.75em;
   border-radius: 5px;
   font-weight: 700;
@@ -761,10 +761,10 @@ a:hover {
   color: #234049;
 }
 .card__link--accent {
-  color: #e07a5f;
+  color: #df7558;
 }
 .card__link--accent:visited {
-  color: #e07a5f;
+  color: #df7558;
 }
 .card {
   background-color: white;
@@ -839,7 +839,7 @@ a:hover {
 
 .typewriter::after {
   content: "|";
-  color: #e07a5f;
+  color: #df7558;
   animation: blink-caret 0.75s step-end infinite;
 }
 
@@ -915,7 +915,7 @@ a:hover {
 
 .btn--accent {
   display: inline-block;
-  background-color: #e07a5f;
+  background-color: #df7558;
   color: white;
   font-size: 0.9em;
   font-weight: bold;
