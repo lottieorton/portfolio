@@ -1,0 +1,18 @@
+@use "../variables/colors" as c;
+
+.btn {
+  &--accent {
+    display: inline-block;
+    background-color: c.$accent;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  &--sm {
+    padding: 0.5em 0.75em;
+  }
+  &--lg {
+    padding: 0.75em 1.5em;
+  }
+}

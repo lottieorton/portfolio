@@ -12,9 +12,9 @@
     <script src="./script.js" type="module" defer></script>
   </head>
   <body>
-    <nav class="navbar page-block page-block--thin">
+    <nav id="nav" class="navbar page-block page-block--thin">
       <a href="./index.html" class="navbar__icon">
-        <i class="fa-solid fa-house"></i>
+        <i class="fa-regular fa-house"></i>
       </a>
       <input type="checkbox" id="navbar-toggle" class="navbar__toggle" />
       <label for="navbar-toggle" class="navbar__icon navbar__icon--toggle">
@@ -31,95 +31,135 @@
           <a href="#projects" class="navbar__link">Projects</a>
         </li>
         <li>
-          <a href="./contact.html" class="navbar__link">Contact Me</a>
+          <a href="./contact.html" class="btn--accent btn--sm">Get In Touch</a>
         </li>
       </ul>
     </nav>
     <header class="header page-block page-block--blue">
-      <h1 class="page-block__heading page-block__heading--left typewriter"></h1>
-      <h2
-        id="sub-heading"
-        class="page-block__heading page-block__heading--small page-block__heading--left"
-      ></h2>
+      <div class="header__main">
+        <div class="header__headings">
+          <h1
+            class="page-block__heading page-block__heading--large page-block__heading--left typewriter"
+          ></h1>
+          <h2
+            id="sub-heading"
+            class="page-block__heading page-block__heading--small page-block__heading--lblue page-block__heading--left"
+          ></h2>
+        </div>
+        <div class="header__link-list">
+          <a href="#projects" class="btn--accent btn--lg">
+            View My Projects <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <div class="icon-list icon-list--sm">
+            <a href="https://github.com/lottieorton" class="icon-list__icons">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/charlotte-orton/"
+              class="icon-list__icons"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="./contact.html" class="icon-list__icons">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="page-block__text page-block__text--sm">
+        SCROLL TO EXPLORE
+        <span
+          ><i class="fa-solid fa-arrow-down page-block__text--accent"></i
+        ></span>
+      </p>
     </header>
     <main>
-      <section id="about" class="about page-block page-block--pale-blue">
+      <section
+        id="about"
+        class="about page-block page-block--pale page-block--animated"
+      >
         <img
           src="./assets/Lottie-profile.jpg"
           class="about__image"
           alt="Lottie"
         />
         <div class="about__content">
-          <h2 class="page-block__heading page-block__heading--right">
+          <h2 class="page-block__heading page-block__heading--left">
             About Me
           </h2>
-          <p class="page-block__text page-block__text--right">
+          <p class="page-block__text page-block__text--left">
             I am a transitioning professional turning a strong foundation in
             data analysis and problem-solving into a career in Software
             Engineering.
           </p>
-          <p class="page-block__text page-block__text--right">
+          <p class="page-block__text page-block__text--left">
             Having spent several years across marketing, fundraising, and media,
             I consistently gravitated toward the technical side of my roles -
             including working with SQL, HTML, and CSS. I have since been
             actively expanding my technical skills through dedicated self-study
-            and am ready to bring my analytical background and unique experience
+            and am eager to bring my analytical background and unique experience
             to a forward-thinking engineering team.
           </p>
         </div>
       </section>
-      <section id="tech-stack" class="tech-stack page-block page-block--blue">
+      <section
+        id="tech-stack"
+        class="tech-stack page-block page-block--blue page-block--animated"
+      >
         <h2
           class="tech-stack__heading page-block__heading page-block__heading--left"
         >
-          My Tech Stack...
+          My Tech Stack
         </h2>
         <div class="tech-stack__grid">
           <div class="tech-stack__card">
             <i class="fa-brands fa-js tech-stack__icon"></i>
-            <p class="page-block__text">JavaScript</p>
+            <p class="tech-stack__label">JavaScript</p>
           </div>
           <div class="tech-stack__card">
             <i class="fa-brands fa-typescript tech-stack__icon"></i>
-            <p class="page-block__text">TypeScript</p>
+            <p class="tech-stack__label">TypeScript</p>
           </div>
           <div class="tech-stack__card">
             <i class="fa-brands fa-react tech-stack__icon"></i>
-            <p class="page-block__text">React</p>
+            <p class="tech-stack__label">React</p>
           </div>
           <div class="tech-stack__card">
             <i class="fa-brands fa-java tech-stack__icon"></i>
-            <p class="page-block__text">Java</p>
+            <p class="tech-stack__label">Java</p>
           </div>
           <div class="tech-stack__card">
             <i class="fa-brands fa-html5 tech-stack__icon"></i>
-            <p class="page-block__text">HTML</p>
+            <p class="tech-stack__label">HTML</p>
           </div>
           <div class="tech-stack__card">
             <i class="fa-brands fa-css3-alt tech-stack__icon"></i>
-            <p class="page-block__text">CSS</p>
+            <p class="tech-stack__label">CSS</p>
           </div>
           <div class="tech-stack__card">
             <i class="fa-brands fa-sass tech-stack__icon"></i>
-            <p class="page-block__text">Sass</p>
+            <p class="tech-stack__label">Sass</p>
           </div>
           <div class="tech-stack__card">
             <i class="fa-solid fa-database tech-stack__icon"></i>
-            <p class="page-block__text">SQL</p>
+            <p class="tech-stack__label">SQL</p>
           </div>
           <div class="tech-stack__card">
             <i class="fa-brands fa-postgresql tech-stack__icon"></i>
-            <p class="page-block__text">PostgreSQL</p>
+            <p class="tech-stack__label">PostgreSQL</p>
           </div>
           <div class="tech-stack__card">
             <i class="fa-brands fa-github tech-stack__icon"></i>
-            <p class="page-block__text">GitHub</p>
+            <p class="tech-stack__label">GitHub</p>
           </div>
         </div>
       </section>
-      <section id="projects" class="projects page-block page-block--pale-blue">
+      <section
+        id="projects"
+        class="projects page-block page-block--pale page-block--animated"
+      >
         <h2 class="page-block__heading page-block__heading--right">
-          My Projects...
+          My Projects
         </h2>
         <div class="carousel">
           <button
@@ -131,14 +171,7 @@
           </button>
           <div class="carousel__container">
             <div class="carousel__track" id="carousel-track">
-              <div
-                class="card page-block__sub-section--purple carousel__card active"
-              >
-                <h3 class="card__header">
-                  <a href="https://github.com/lottieorton/employees"
-                    >Employee Creator</a
-                  >
-                </h3>
+              <div class="card carousel__card active">
                 <a href="https://github.com/lottieorton/employees">
                   <img
                     src="./assets/employee-creator.png"
@@ -146,19 +179,39 @@
                     alt="Employee creator website"
                   />
                 </a>
-                <p class="card__text">
-                  Manage your workforce through this responsive, full stack-app
-                  employee management app.
-                </p>
-                <p class="card__text card__text--small">
-                  Languages: Java, SpringBoot, React, TypeScript, Tailwind
-                </p>
+
+                <div class="card__content">
+                  <div class="card__info">
+                    <h3 class="card__header">
+                      <a
+                        href="https://github.com/lottieorton/employees"
+                        class="card__link"
+                        >Employee Creator</a
+                      >
+                    </h3>
+                    <p class="card__text">
+                      Manage your workforce through this responsive, full-stack
+                      employee management app.
+                    </p>
+                    <ul class="card__language-list">
+                      <li class="card__language">Java</li>
+                      <li class="card__language">SpringBoot</li>
+                      <li class="card__language">React</li>
+                      <li class="card__language">TypeScript</li>
+                      <li class="card__language">Tailwind</li>
+                      <li class="card__language">MySQL</li>
+                    </ul>
+                  </div>
+                  <a
+                    class="card__link--accent"
+                    href="https://employee-creator.dev/"
+                    >View Live Site
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
               </div>
 
-              <div class="card page-block__sub-section--purple carousel__card">
-                <h3 class="card__header">
-                  <a href="https://github.com/lottieorton/todos">Todos</a>
-                </h3>
+              <div class="card carousel__card">
                 <a href="https://github.com/lottieorton/todos">
                   <img
                     src="./assets/todos.png"
@@ -166,43 +219,78 @@
                     alt="Todos app"
                   />
                 </a>
-                <p class="card__text">
-                  Streamline your daily tasks and categorize your workflow with
-                  this full-stack productivity app.
-                </p>
-                <p class="card__text card__text--small">
-                  Languages: Java, SpringBoot, React, TypeScript, SCSS
-                </p>
+                <div class="card__content">
+                  <div class="card__info">
+                    <h3 class="card__header">
+                      <a
+                        href="https://github.com/lottieorton/todos"
+                        class="card__link"
+                        >Todos</a
+                      >
+                    </h3>
+
+                    <p class="card__text">
+                      Streamline your daily tasks and categorise your workflow
+                      with this full-stack productivity app.
+                    </p>
+                    <ul class="card__language-list">
+                      <li class="card__language">Java</li>
+                      <li class="card__language">SpringBoot</li>
+                      <li class="card__language">React</li>
+                      <li class="card__language">TypeScript</li>
+                      <li class="card__language">SCSS</li>
+                    </ul>
+                  </div>
+                  <a
+                    class="card__link--accent"
+                    href="https://todos-cyar.onrender.com"
+                    >View Live Site
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
               </div>
 
-              <div class="card page-block__sub-section--purple carousel__card">
-                <h3 class="card__header">
-                  <a href="https://github.com/lottieorton/minefield-project"
-                    >Minefield</a
-                  >
-                </h3>
+              <div class="card carousel__card">
                 <a href="https://github.com/lottieorton/minefield-project">
                   <img
-                    src="./assets/minefield.jpg"
+                    src="./assets/minefield.png"
                     class="card__image"
                     alt="Minefield website"
                   />
                 </a>
-                <p class="card__text">
-                  Clear all mines in the field, at your selected difficulty
-                  level. Create a profile and see your success rates.
-                </p>
-                <p class="card__text card__text--small">
-                  Languages: JavaScript, HTML, CSS
-                </p>
+                <div class="card__content">
+                  <div class="card__info">
+                    <h3 class="card__header">
+                      <a
+                        href="https://github.com/lottieorton/minefield-project"
+                        class="card__link"
+                        >Minefield</a
+                      >
+                    </h3>
+                    <p class="card__text">
+                      Play the classic Minesweeper game and create an account to
+                      keep track of your results.
+                    </p>
+                    <ul class="card__language-list">
+                      <li class="card__language">JavaScript</li>
+                      <li class="card__language">React</li>
+                      <li class="card__language">Node.js</li>
+                      <li class="card__language">Express</li>
+                      <li class="card__language">PostgreSQL</li>
+                      <li class="card__language">HTML</li>
+                      <li class="card__language">CSS</li>
+                    </ul>
+                  </div>
+                  <a
+                    class="card__link--accent"
+                    href="https://minefield-project-frontend.onrender.com"
+                    >View Live Site
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
               </div>
 
-              <div class="card page-block__sub-section--purple carousel__card">
-                <h3 class="card__header">
-                  <a href="https://github.com/lottieorton/google-books"
-                    >Google Books</a
-                  >
-                </h3>
+              <div class="card carousel__card">
                 <a href="https://github.com/lottieorton/google-books">
                   <img
                     src="./assets/google-books.png"
@@ -210,21 +298,35 @@
                     alt="Google books app"
                   />
                 </a>
-                <p class="card__text">
-                  Search for your favourite books using this React app that
-                  utilises the Google Books API.
-                </p>
-                <p class="card__text card__text--small">
-                  Languages: JavaScript, React, SCSS
-                </p>
+                <div class="card__content">
+                  <div class="card__info">
+                    <h3 class="card__header">
+                      <a
+                        href="https://github.com/lottieorton/google-books"
+                        class="card__link"
+                        >Google Books</a
+                      >
+                    </h3>
+                    <p class="card__text">
+                      Search for your favourite books using this React app that
+                      utilises the Google Books API.
+                    </p>
+                    <ul class="card__language-list">
+                      <li class="card__language">JavaScript</li>
+                      <li class="card__language">React</li>
+                      <li class="card__language">SCSS</li>
+                    </ul>
+                  </div>
+                  <a
+                    class="card__link--accent"
+                    href="https://google-books-00x3.onrender.com"
+                    >View Live Site
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
               </div>
 
-              <div class="card page-block__sub-section--purple carousel__card">
-                <h3 class="card__header">
-                  <a href="https://github.com/lottieorton/minesweeper"
-                    >Minesweeper</a
-                  >
-                </h3>
+              <div class="card carousel__card">
                 <a href="https://github.com/lottieorton/minesweeper">
                   <img
                     src="./assets/minesweeper.png"
@@ -232,19 +334,27 @@
                     alt="Minesweeper game"
                   />
                 </a>
-                <p class="card__text">
-                  Play an interactive, text-based version of the classic
-                  Minesweeper game in your terminal!
-                </p>
-                <p class="card__text card__text--small">Languages: Java</p>
+                <div class="card__content">
+                  <div class="card__info">
+                    <h3 class="card__header">
+                      <a
+                        href="https://github.com/lottieorton/minesweeper"
+                        class="card__link"
+                        >Minesweeper</a
+                      >
+                    </h3>
+                    <p class="card__text">
+                      Play an interactive, text-based version of the classic
+                      Minesweeper game right in your terminal!
+                    </p>
+                    <ul class="card__language-list">
+                      <li class="card__language">Java</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
 
-              <div class="card page-block__sub-section--purple carousel__card">
-                <h3 class="card__header">
-                  <a href="https://github.com/lottieorton/reddit-project"
-                    >Reddit</a
-                  >
-                </h3>
+              <div class="card carousel__card">
                 <a href="https://github.com/lottieorton/reddit-project">
                   <img
                     src="./assets/reddit.png"
@@ -252,36 +362,58 @@
                     alt="Reddit website"
                   />
                 </a>
-                <p class="card__text">A Reddit application</p>
-                <p class="card__text card__text--small">
-                  Languages: JavaScript, HTML, CSS
-                </p>
+                <div class="card__content">
+                  <div class="card__info">
+                    <h3 class="card__header">
+                      <a
+                        href="https://github.com/lottieorton/reddit-project"
+                        class="card__link"
+                        >Reddit</a
+                      >
+                    </h3>
+                    <p class="card__text">
+                      A front-end Reddit application that allows you to search,
+                      browse, and seamlessly select your favorite subreddits.
+                    </p>
+                    <ul class="card__language-list">
+                      <li class="card__language">JavaScript</li>
+                      <li class="card__language">React</li>
+                      <li class="card__language">HTML</li>
+                      <li class="card__language">CSS</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
 
-              <div class="card page-block__sub-section--purple carousel__card">
-                <h3 class="card__header">
-                  <a href="https://github.com/lottieorton/fight-simulator"
-                    >Fight Simulator</a
-                  >
-                </h3>
+              <div class="card carousel__card">
                 <a href="https://github.com/lottieorton/fight-simulator">
                   <img
-                    src="./assets/fight-sim.jpg"
+                    src="./assets/fight-sim.png"
                     class="card__image"
                     alt="Fight Simulator game"
                   />
                 </a>
-                <p class="card__text">A terminal based fight simulator game</p>
-                <p class="card__text card__text--small">
-                  Languages: JavaScript
-                </p>
+                <div class="card__content">
+                  <div class="card__info">
+                    <h3 class="card__header">
+                      <a
+                        href="https://github.com/lottieorton/fight-simulator"
+                        class="card__link"
+                        >Fight Simulator</a
+                      >
+                    </h3>
+                    <p class="card__text">
+                      An interactive, terminal-based, fight simulator game.
+                      Select your favourite character and defeat your opponent.
+                    </p>
+                    <ul class="card__language-list">
+                      <li class="card__language">JavaScript</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div class="card page-block__sub-section--purple carousel__card">
-                <h3 class="card__header">
-                  <a href="https://github.com/lottieorton/assessment-cafe"
-                    >Cafe website</a
-                  >
-                </h3>
+
+              <div class="card carousel__card">
                 <a href="https://github.com/lottieorton/assessment-cafe">
                   <img
                     src="./assets/cafe.png"
@@ -289,16 +421,29 @@
                     alt="Cafe website"
                   />
                 </a>
-                <p class="card__text">A responsive cafe website</p>
-                <p class="card__text card__text--small">
-                  Languages: HTML, SCSS
-                </p>
+                <div class="card__content">
+                  <div class="card__info">
+                    <h3 class="card__header">
+                      <a
+                        href="https://github.com/lottieorton/assessment-cafe"
+                        class="card__link"
+                        >Cafe website</a
+                      >
+                    </h3>
+                    <p class="card__text">
+                      A fully responsive cafe website complete with a menu,
+                      customer reviews, and dedicated About and Contact Us
+                      pages.
+                    </p>
+                    <ul class="card__language-list">
+                      <li class="card__language">HTML</li>
+                      <li class="card__language">SCSS</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
 
-              <div class="card page-block__sub-section--purple carousel__card">
-                <h3 class="card__header">
-                  <a href="https://github.com/lottieorton/hangman">Hangman</a>
-                </h3>
+              <div class="card carousel__card">
                 <a href="https://github.com/lottieorton/hangman">
                   <img
                     src="./assets/hangman.png"
@@ -306,22 +451,30 @@
                     alt="Hangman game"
                   />
                 </a>
-                <p class="card__text">
-                  A 'walk the plank' version of the classic Hangman game, by
-                  spelling out the concealed word before the character dives
-                  into the water.
-                </p>
-                <p class="card__text card__text--small">
-                  Languages: JavaScript, HTML, SCSS
-                </p>
+                <div class="card__content">
+                  <div class="card__info">
+                    <h3 class="card__header">
+                      <a
+                        href="https://github.com/lottieorton/hangman"
+                        class="card__link"
+                        >Hangman</a
+                      >
+                    </h3>
+                    <p class="card__text">
+                      A 'walk the plank' version of the classic Hangman game.
+                      Spell out the concealed word before the character dives
+                      into the water.
+                    </p>
+                    <ul class="card__language-list">
+                      <li class="card__language">JavaScript</li>
+                      <li class="card__language">HTML</li>
+                      <li class="card__language">SCSS</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
 
-              <div class="card page-block__sub-section--purple carousel__card">
-                <h3 class="card__header">
-                  <a href="https://github.com/lottieorton/morse-translator"
-                    >Morse Translator</a
-                  >
-                </h3>
+              <div class="card carousel__card">
                 <a href="https://github.com/lottieorton/morse-translator">
                   <img
                     src="./assets/morse-translator.png"
@@ -329,13 +482,27 @@
                     alt="Morse Translator website"
                   />
                 </a>
-                <p class="card__text">
-                  Translation app that converts English to Morse Code and vice
-                  versa.
-                </p>
-                <p class="card__text card__text--small">
-                  Languages: JavaScript, HTML, SCSS
-                </p>
+                <div class="card__content">
+                  <div class="card__info">
+                    <h3 class="card__header">
+                      <a
+                        href="https://github.com/lottieorton/morse-translator"
+                        class="card__link"
+                        >Morse Translator</a
+                      >
+                    </h3>
+                    <p class="card__text">
+                      A translation app that converts English to Morse Code and
+                      vice versa, either via auto-detection or explicit language
+                      selection.
+                    </p>
+                    <ul class="card__language-list">
+                      <li class="card__language">JavaScript</li>
+                      <li class="card__language">HTML</li>
+                      <li class="card__language">SCSS</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -349,5 +516,29 @@
         </div>
       </section>
     </main>
+    <footer
+      class="footer page-block page-block--thin page-block--blue page-block--animated"
+    >
+      <a href="#nav" class="page-block__text page-block__text--sm">
+        SCROLL BACK TO THE TOP
+        <span
+          ><i class="fa-solid fa-arrow-up page-block__text--accent"></i
+        ></span>
+      </a>
+      <div class="icon-list icon-list--sm">
+        <a href="https://github.com/lottieorton" class="icon-list__icons">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/charlotte-orton/"
+          class="icon-list__icons"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="./contact.html" class="icon-list__icons">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

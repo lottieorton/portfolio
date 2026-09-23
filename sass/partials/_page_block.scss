@@ -1,103 +1,127 @@
-@use '../mixins/media_queries' as q;
-@use '../variables/colors' as c;
+@use "../mixins/media_queries" as q;
+@use "../variables/colors" as c;
+@use "../mixins/mixins" as m;
 
 .page-block {
-    padding: 4em 2em;
-    min-height: 60vh;
-    &--blue {
-        background-color: c.$teal;
-        color: c.$pale-blue;
-        a {
-            color: c.$pale-blue;
-        }
+  padding: 4em 2em;
+  min-height: 60vh;
+  position: relative;
+
+  &--animated {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: transform 0.8s ease-out;
+  }
+
+  &--visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &--blue {
+    background-color: c.$teal;
+    box-shadow: 0 100px 0 0 c.$teal;
+    color: white;
+    a {
+      color: white;
     }
-    &--pale-blue {
-        background-color: c.$pale-blue;
-        color: c.$purple;
+  }
+  &--pale {
+    background-color: c.$bg;
+    box-shadow: 0 100px 0 0 c.$bg;
+    color: c.$dark-blue-text;
+  }
+  &--thin {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    min-height: 8vh;
+  }
+  &--full-page {
+    min-height: 92vh;
+  }
+  &__heading {
+    font-size: 1.75em;
+    text-align: center;
+    margin: 0;
+    &--large {
+      font-size: 3em;
     }
+    &--small {
+      font-weight: 300;
+      font-size: 1.25em;
+    }
+    &--lblue {
+      color: c.$light-blue;
+    }
+  }
+
+  &__text {
+    font-size: 0.85em;
+    text-align: center;
+    margin: 0;
+
+    &--sm {
+      font-size: 0.6em;
+    }
+
+    &--accent {
+      color: c.$accent;
+    }
+  }
+
+  @include q.large-tablet {
+    padding-left: 4em;
+    padding-right: 4em;
     &--thin {
-        padding-top: 1em;
-        padding-bottom: 1em;
-        min-height: 8vh;
+      min-height: 10vh;
     }
     &--full-page {
-        min-height: 92vh;
-    }
-    &__sub-section {
-        &--purple {
-            background-color: c.$purple;
-            color: c.$pale-blue;
-            a {
-                color: c.$pale-blue;
-                &:visited {
-                    color: c.$pale-blue;
-                }
-            }  
-        }
-        &--pale-blue {
-            background-color: c.$pale-blue;
-            color: c.$teal;
-            &__button {
-                background-color: c.$teal;
-                color: c.$pale-blue;
-            }
-        }
+      min-height: 90vh;
     }
     &__heading {
-        font-size: 2em;
-        text-align: center;
-        margin: 0;
-        &--small {
-            font-weight: 300;
-            font-size: 1.5em;
-        }
+      font-size: 2.2em;
+      &--large {
+        font-size: 4.5em;
+      }
+      &--small {
+        font-size: 1.5em;
+      }
+      &--left {
+        text-align: left;
+      }
+      &--right {
+        text-align: right;
+        align-self: flex-end;
+      }
     }
     &__text {
-        font-size: 1.1em;
-        text-align: center;
+      font-size: 1em;
+      &--sm {
+        font-size: 0.7em;
+      }
+      &--left {
+        text-align: left;
+      }
     }
+  }
 
-    @include q.large-tablet {
-        padding-left: 4em;
-        padding-right: 4em;
-        &--thin {
-            min-height: 10vh;
-        }
-        &--full-page {
-            min-height: 90vh;
-        }
-        &__heading {
-            font-size: 2.5em;
-            &--small {
-                font-size: 2em;
-            }
-            &--left {
-                text-align: left;
-            }
-            &--right {
-                text-align: right;
-                align-self: flex-end;
-            }
-        }
-        &__text {
-            font-size: 1.25em;
-            &--right {
-                text-align: right;
-            }
-        }
+  @include q.large-desktop {
+    padding-left: 6em;
+    padding-right: 6em;
+    &__heading {
+      font-size: 3em;
+      &--large {
+        font-size: 5em;
+      }
+      &--small {
+        font-size: 2.25em;
+      }
     }
-
-    @include q.large-desktop {
-        padding-left: 6em;
-        padding-right: 6em;
-        &__heading {
-            font-size: 4em;
-            &--small {
-                font-size: 3em;
-            }
-        }
-        &__text {
-            font-size: 2em;
-        }
+    &__text {
+      font-size: 1.5em;
+      &--sm {
+        font-size: 0.9em;
+      }
     }
+  }
 }
