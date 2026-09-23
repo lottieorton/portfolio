@@ -6,10 +6,17 @@
   @include m.flex(column);
   width: 350px;
   color: c.$dark-blue-text;
-  a {
+  &__link {
     color: c.$dark-blue-text;
     &:visited {
       color: c.$dark-blue-text;
+    }
+
+    &--accent {
+      color: c.$accent;
+      &:visited {
+        color: c.$accent;
+      }
     }
   }
   background-color: white;

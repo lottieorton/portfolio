@@ -740,11 +740,17 @@ a:hover {
   width: 350px;
   color: #234049;
 }
-.card a {
+.card__link {
   color: #234049;
 }
-.card a:visited {
+.card__link:visited {
   color: #234049;
+}
+.card__link--accent {
+  color: #e07a5f;
+}
+.card__link--accent:visited {
+  color: #e07a5f;
 }
 .card {
   background-color: white;
