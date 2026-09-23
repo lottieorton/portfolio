@@ -21,3 +21,24 @@ carousel.addEventListener("mouseenter", stopAutoRotate);
 carousel.addEventListener("mouseleave", startAutoRotate);
 
 startAutoRotate();
+
+// pack block transition
+const blockObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("page-block--visible");
+        // blockObserver.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.1,
+  },
+);
+
+const pageBlocks = document.querySelectorAll(".page-block");
+
+pageBlocks.forEach((block) => {
+  blockObserver.observe(block);
+});
