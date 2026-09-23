@@ -25,9 +25,17 @@
   }
   background-color: white;
   border-radius: 20px;
+
   &__content {
     @include m.flex(column);
+    justify-content: space-between;
+    height: 100%;
+    gap: 1.25em;
     padding: 1.5em;
+  }
+
+  &__info {
+    @include m.flex(column);
     gap: 1em;
   }
 

@@ -28,7 +28,6 @@ const blockObserver = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("page-block--visible");
-        // blockObserver.unobserve(entry.target);
       }
     });
   },
@@ -37,7 +36,7 @@ const blockObserver = new IntersectionObserver(
   },
 );
 
-const pageBlocks = document.querySelectorAll(".page-block");
+const pageBlocks = document.querySelectorAll(".page-block--animated");
 
 pageBlocks.forEach((block) => {
   blockObserver.observe(block);
