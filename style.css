@@ -762,6 +762,10 @@ a:hover {
 }
 .card__link--accent {
   color: #df7558;
+  font-weight: bold;
+}
+.card__link--accent:hover {
+  text-decoration: underline;
 }
 .card__link--accent:visited {
   color: #df7558;
